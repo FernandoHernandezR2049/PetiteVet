@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding-top: 10px;
+    text-align: center;
+    color: #444;
+    font-size: 20px;
+    margin: auto;
+    line-height: 50px;
+    font-family: Fraunces;
+    color: #D24686;
+    background-color: #b5b2b27a;
+}
+
+.title
+{
+    text-align: center;
+    font-size: 70px;
+    font-family: Fraunces;
+    color: #D24686;
+    font-size: auto;
+}
+
+.carrusel {
+    width: auto;
+    padding-bottom: 10px;
+
+}
+
+.servicios{
+    margin: 80px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card-deck
+{
+    padding: 10px;
+}
+
+#listaCremación
+{
+    text-align: left;
+    list-style: square;
+    padding-left: 30px;
+}
+
+.btn-primary
+{
+    font-family: 'Inter';
+    font-style: normal;
+    background-color: #D24686;
+    border-color: #D24686;
+   
+}
+
+li::marker 
+{
+	color: #D24686;
+}
