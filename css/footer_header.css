@@ -1,0 +1,66 @@
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  z-index: 999;
+  font-size: 1.25rem;
+}
+
+.btn-pink {
+  color: white;
+  background-color: #d93073;
+}
+.btn-pink:hover {
+  color: #ffffff96;
+}
+.pet-vet-footer {
+  background-color: #d93073;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+}
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-media > a {
+  margin-left: 10px;
+}
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.copyright p {
+  width: 100%;
+  margin: 0 auto;
+}
+.business-hours {
+  display: flex;
+  align-items: center;
+}
+.business-hours > img {
+  margin-right: 10px;
+}
+.business-hours-text > p {
+  margin: auto;
+}
+.my-icon {
+  width: 23px;
+  height: 23px;
+  margin: 0 10px;
+}
+@media (width < 575px) {
+  .pet-vet-footer {
+    font-size: 0.7rem;
+  }
+  .my-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
