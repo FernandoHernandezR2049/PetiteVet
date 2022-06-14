@@ -56,6 +56,11 @@
     color: #D24686;
 }
 
+.card-footer
+{
+    background-color: #EB97B8 !important;
+}
+
 #listaCremación
 {
     font-family: "commissioner";
@@ -67,7 +72,7 @@
 .btn
 {
     font-family: 'Inter';
-    font-style: normal;
+    font-weight: bold;
     background-color: #D24686 !important;
     border-color: #D24686!important;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; 
