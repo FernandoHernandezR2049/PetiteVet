@@ -1,23 +1,27 @@
-#body{
+#body {
     background: #f5f5f5;
     max-width: 100%;
     max-height: 100%;
     overflow-x: hidden;
 }
-.nav-bar{
+
+.nav-bar {
     text-align: center;
 }
-.banner { /* BANNER PAPASITO CHULO*/
+
+.banner {
+    /* BANNER PAPASITO CHULO*/
     padding-bottom: 2%;
-    width: 100%;   
+    width: 100%;
     margin: 0;
 }
 
-.banner-img{ /* BANNER MIJITO PRECIOSO*/
-width: 100%;
+.banner-img {
+    /* BANNER MIJITO PRECIOSO*/
+    width: 100%;
 }
 
-.products h2{
+.products h2 {
     font-family: 'Fraunces', sans-serif;
     font-weight: bold;
     font-size: 2rem;
@@ -26,33 +30,102 @@ width: 100%;
     padding-bottom: 1%;
 }
 
-.card-deck.col-lg-6, .card{
+.card-deck.col-lg-6,
+.card {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 4fr));
     margin: 0 auto;
-
 }
 
-.card{
+.card {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     font-family: 'Commissioner', sans-serif;
 }
 
-.card-title{
+.card-title {
     font-weight: bold;
 }
 
-.card-footer{
+.card-footer {
     display: inline-block;
-    background-color: #D24686;
+    background-color: #EB97B8;
+    padding-bottom: 2%;
 }
 
-.btn{
+.btn {
     align-content: center;
     align-items: center;
-    background-color: #EB97B8;
+    background-color: #D24686;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    font-weight: bold;
 }
 
 
+/* Service*/
+
+.service {
+    color: #b74e7d;
+    font-family: 'Fraunces';
+    font-size: 2rem;
+    font-weight: Bold;
+    text-align: center;
+    opacity: 1;
+    margin: 30px 0;
+}
+
+.title {
+    width: 252px;
+    color: rgba(255, 255, 255, 1);
+    top: 15px;
+    left: 240px;
+    font-family: 'Fraunces';
+    font-weight: Bold;
+    font-size: 33px;
+    opacity: 1;
+    text-align: center;
+}
+
+.jumbotron {
+    background-color: #EB97B8 !important;
+    padding-top: 30px;
+    min-height: 300px;
+    color: #ffffff;
+    font-family: 'Commissioner', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 1;
+    display: flex;
+    overflow: hidden;
+}
+
+.btn-primary {
+    font-family: 'Commissioner', sans-serif;
+    background-color: #D24686 !important;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-color: #D24686 !important;
+}
+
+.container-jumbo-left {
+    width: 80%;
+}
+
+
+/*Recomendations */
+
+.testimony {
+    text-align: center;
+    font-size: small;
+    font-family: 'Commissioner', sans-serif;
+    align-items: center;
+}
+
+.col-lg-4 {
+    font-family: 'Commissioner', sans-serif !important;
+}
+
+@media(max-width:575px) {
+    .jumbotron {
+        flex-direction: column;
+    }
+}
