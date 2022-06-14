@@ -8,19 +8,19 @@
     text-align: center;
 }
 .banner { /* BANNER PAPASITO CHULO*/
-    display: flex;
     padding-bottom: 2%;
-    flex-direction: column;
-    align-items: center;
-
+    width: 100%;   
+    margin: 0;
 }
+
 .banner-img{ /* BANNER MIJITO PRECIOSO*/
-    width: clamp(310px, 50%, 1200px);
+width: 100%;
 }
 
 .products h2{
-    font-family: 'Commissioner', sans-serif;
+    font-family: 'Fraunces', sans-serif;
     font-weight: bold;
+    font-size: 2rem;
     color: #D24686;
     text-align: center;
     padding-bottom: 1%;
@@ -30,23 +30,29 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 4fr));
     margin: 0 auto;
-    padding-bottom: 0;
+
 }
 
 .card{
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    font-family: 'Commissioner', sans-serif;
+}
+
+.card-title{
+    font-weight: bold;
 }
 
 .card-footer{
     display: inline-block;
-    background-color: #EB97B8;
+    background-color: #D24686;
 }
 
 .btn{
     align-content: center;
     align-items: center;
-    background-color: #D24686;
+    background-color: #EB97B8;
     color: white;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 
