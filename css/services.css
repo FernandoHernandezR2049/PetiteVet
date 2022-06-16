@@ -1,31 +1,21 @@
 * {
     margin: 0;
-    padding: 0;
-}
-
-.header {
-    padding-top: 10px;
-    text-align: center;
-    color: #444;
-    font-size: 20px;
-    margin: auto;
-    line-height: 50px;
-    font-family: Fraunces;
-    color: #D24686;
-    background-color: #b5b2b27a;
+    padding-top: 0;
 }
 
 .title
 {
     text-align: center;
-    font-size: 2rem;
-    font-family: Fraunces;
+    font-size: 2.5rem;
+    font-family: 'Fraunces';
+    font-weight: bold;
     color: #D24686;
 }
 
 .carrusel {
     width: auto;
     padding-bottom: 2%;
+    padding-top: 60px;
 
 }
 
@@ -45,7 +35,7 @@
 .card
 {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; 
-    font-family: "commissioner";
+    font-family: commissioner;
     font-size: 1rem;
 }
 
@@ -58,12 +48,12 @@
 
 .card-footer
 {
-    background-color: #EB97B8 !important;
+    background-color: #FFA1CC !important;
 }
 
 #listaCremación
 {
-    font-family: "commissioner";
+    font-family: commissioner;
     text-align: left;
     list-style: square;
     padding-left: 30px;
