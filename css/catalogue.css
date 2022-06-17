@@ -1,6 +1,39 @@
-.title {
+.card {
+    padding: 10px;
+    display: grid;
+}
+
+.carrusel {
+    padding-top: 70px;
+}
+
+.card-title {
     text-align: center;
     font-size: 2rem;
-    font-family: Fraunces;
+    font-family: 'Fraunces';
+}
+
+.title {
     color: #D24686;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Fraunces';
+}
+
+#products {
+    text-align: center;
+    font-family: 'Commissioner', 'sans-serif' !important;
+    align-items: center;
+}
+
+.btn-primary {
+    background-color: #D24686 !important;
+    border-color: #D24686 !important;
+    font-weight: bold !important;
+}
+
+.card-text {
+    text-align: center;
+    font-family: 'Commissioner', 'sans-serif' !important;
+    align-items: center;
 }

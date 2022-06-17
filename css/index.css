@@ -8,21 +8,22 @@
     text-align: center;
 }
 
+
 /*HOME*/
+
 .banner {
     /* BANNER PAPASITO CHULO*/
     margin-top: 4%;
     width: 100%;
     margin: 0;
     padding-top: 60px;
-
 }
 
 .banner-img {
     width: 100%;
 }
 
-.products{
+.products {
     font-family: 'Fraunces';
     font-weight: bold;
     font-size: 2rem;
@@ -31,7 +32,6 @@
     padding-top: 2%;
     padding-bottom: 1%;
 }
-
 
 .card {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -47,7 +47,7 @@
     background-color: #EB97B8;
 }
 
-.btn{
+.btn {
     font-size: .78rem;
     background-color: #D24686;
     color: white;
