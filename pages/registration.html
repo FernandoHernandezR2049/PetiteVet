@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/footer_header.css">
+    <link rel="stylesheet" href="../css/footer_header.css">
     <link
             href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
             rel="stylesheet"
@@ -26,14 +26,14 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-navbar">
         <a
             class="navbar-brand"
-            href="./index.html"
+            href="../index.html"
             style="
                 font-family: 'Lobster';
                 color: #d93073;
                 font-size: 2rem;
             "
             ><img
-                src="./assets/logo.png"
+                src="../assets/logo.png"
                 alt="Petite Vet Logo"
                 width="50px"
                 height="33px"
@@ -55,18 +55,18 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="./index.html"
+                    <a class="nav-link" href="../index.html"
                         >Home <span class="sr-only">(current)</span></a
                     >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./pages/catalogue.html">Catálogo</a>
+                    <a class="nav-link" href="../pages/catalogue.html">Catálogo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./pages/services.html">Servicios</a>
+                    <a class="nav-link" href="../pages/services.html">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./pages/contact.html"
+                    <a class="nav-link" href="../pages/contact.html"
                         >Contacto</a
                     >
                 </li>
@@ -85,10 +85,10 @@
                         class="dropdown-menu"
                         aria-labelledby="navbarDropdownMenuLink"
                     >
-                        <a class="dropdown-item" href="./pages/aboutUs.html"
+                        <a class="dropdown-item" href="../pages/aboutUs.html"
                             >Equipo desarrollador (Vet Devs)</a
                         >
-                        <a class="dropdown-item" href="./pages/about_petite_vet.html"
+                        <a class="dropdown-item" href="../pages/about_petite_vet.html"
                             >Veterinaria Petit Vet</a
                         >
                     </div>
@@ -96,16 +96,16 @@
             </ul>
             <ul class="navbar-nav my-2 my-lg-0 ">
                 <li class="nav-item my-2 my-lg-0">
-                    <a class="nav-link" href="./pages/shopping_cart.html"
+                    <a class="nav-link" href="../pages/shopping_cart.html"
                         ><img
                             class="my-icon"
-                            src="./assets/cart2.svg"
+                            src="../assets/cart2.svg"
                             alt=""
                             srcset=""
                     /></a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-pink" href="./pages/login.html">Acceso</a>
+                    <a class="btn btn-pink" href="../pages/login.html">Acceso</a>
                 </li>
             </ul>
         </div>
@@ -114,9 +114,9 @@
 
 <!-- REGISTRATION PAGE -->
   <div class="wrapper" style="padding-top: 10rem" >
-    <h2>Regístrate</h2>
     <div class="col-md-6" style="height: 464px;">
         <div class="container">
+            <h2 class="registrar">Regístrate</h2>
             <div class="alert alert-danger alert fade show" style="display:none" role="alert" id="alertValidaciones">
                 <p id="alertValidacionesTexto"></p>
             </div>
@@ -137,15 +137,17 @@
             <div class="form-group">
                 <label for="email">Contraseña:</label>
                 <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" required>
+                <small id="passwordHelp" class="form-text text-muted">La contraseña debe contener un número, una letra mayúscula, 
+                    una minúscula y tener al menos 8 caracteres de longitud.</small>
             </div>
             <div class="form-group">
                 <label for="email">Confirma tu contraseña:</label>
                 <input type="password" class="form-control" id="passwordConfirm" placeholder="Confirma tu contraseña" required>
             </div>
             <div class="text">
-                <h5>¿Ya tienes cuenta? <a href="#">Inicia sesión</a></h5>
+                <h6>¿Ya tienes cuenta? <a href="#">Inicia sesión</a></h6>
               </div>
-            <button type="submit" id="btnRegistrar" class="btn btn-link btn-md">Regístrate</button>
+            <button type="submit" id="btnRegistrar" class="btn btn-md">Regístrate</button>
         </form>
         </div>
     </div>
@@ -160,7 +162,7 @@
                     target="_blank"
                     ><img
                         class="my-icon"
-                        src="./assets/facebook.svg"
+                        src="../assets/facebook.svg"
                         alt=""
                         srcset=""
                     />
@@ -168,7 +170,7 @@
                 <a href="#"
                     ><img
                         class="my-icon"
-                        src="./assets/instagram.svg"
+                        src="../assets/instagram.svg"
                         alt=""
                         srcset=""
                 /></a>
@@ -180,7 +182,7 @@
             <div class="business-hours">
                 <img
                     class="my-icon"
-                    src="./assets/calendar.png"
+                    src="../assets/calendar.png"
                     alt=""
                     srcset=""
                 />
