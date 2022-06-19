@@ -4,7 +4,14 @@
 }
 
 .wrapper{
-    display: grid;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.registrar{
+  color: #D24686;
+  text-align: center;
 }
 
 .btn{
@@ -13,4 +20,8 @@
     color: white;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     font-weight: bold;
+}
+
+#btnRegistrar:hover{
+  color: gainsboro;
 }
