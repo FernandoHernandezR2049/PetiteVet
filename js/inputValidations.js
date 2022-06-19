@@ -28,3 +28,16 @@ export function validarMail(txtMail) {
     return true;
   }
 } //validationEmail fin
+export function passwordMatches(password, confirmPassword) {
+  const passwordRegex = new RegExp(
+    "^(((?=.[a-z])(?=.[A-Z]))|((?=.[a-z])(?=.[0-9]))|((?=.[A-Z])(?=.[0-9])))(?=.{6,})"
+  );
+  if (password.value === confirmPassword.value) {
+    return true;
+  } else {
+    return false;
+  }
+}
+export function passwordValidation(password) {
+  //TODO implement password regex
+}
