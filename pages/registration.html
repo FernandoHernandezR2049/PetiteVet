@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/registration.css">
+    <link href="https://fonts.googleapis.com/css?family=Fraunces&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/footer_header.css">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+            rel="stylesheet"
+        />
+    <title>Registration</title>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-navbar">
+        <a
+            class="navbar-brand"
+            href="./index.html"
+            style="
+                font-family: 'Lobster';
+                color: #d93073;
+                font-size: 2rem;
+            "
+            ><img
+                src="./assets/logo.png"
+                alt="Petite Vet Logo"
+                width="50px"
+                height="33px"
+            />
+            Petite Vet</a
+        >
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon" style="color: #d93073"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html"
+                        >Home <span class="sr-only">(current)</span></a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/catalogue.html">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/services.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/contact.html"
+                        >Contacto</a
+                    >
+                </li>
+                <li class="nav-item dropdown">
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdownMenuLink"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-expanded="false"
+                    >
+                        Sobre nosotros
+                    </a>
+                    <div
+                        class="dropdown-menu"
+                        aria-labelledby="navbarDropdownMenuLink"
+                    >
+                        <a class="dropdown-item" href="./pages/aboutUs.html"
+                            >Equipo desarrollador (Vet Devs)</a
+                        >
+                        <a class="dropdown-item" href="./pages/about_petite_vet.html"
+                            >Veterinaria Petit Vet</a
+                        >
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav my-2 my-lg-0 ">
+                <li class="nav-item my-2 my-lg-0">
+                    <a class="nav-link" href="./pages/shopping_cart.html"
+                        ><img
+                            class="my-icon"
+                            src="./assets/cart2.svg"
+                            alt=""
+                            srcset=""
+                    /></a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-pink" href="./pages/login.html">Acceso</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+<!-- REGISTRATION PAGE -->
+  <div class="wrapper" style="padding-top: 10rem" >
+    <h2>Regístrate</h2>
+    <div class="col-md-6" style="height: 464px;">
+        <div class="container">
+            <div class="alert alert-danger alert fade show" style="display:none" role="alert" id="alertValidaciones">
+                <p id="alertValidacionesTexto"></p>
+            </div>
+
+            <div class="form-group padding">
+                <label for="Name">Nombre:</label>
+                <input type="text" class="form-control" id="Name" placeholder="Ingresa tu nombre">
+            </div>
+
+            <div class="form-group">
+                <label for="Tel">Teléfono:</label>
+                <input type="tel" class="form-control" id="Tel"  placeholder="Ingresa tu número telefónico">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+            </div>
+            <div class="form-group">
+                <label for="email">Contraseña:</label>
+                <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Confirma tu contraseña:</label>
+                <input type="password" class="form-control" id="password" placeholder="Confirma tu contraseña" required>
+            </div>
+            <div class="text">
+                <h5>¿Ya tienes cuenta? <a href="#">Inicia sesión</a></h5>
+              </div>
+            <button type="submit" id="btnAgregar" class="btn btn-link btn-md">Regístrate</button>
+        </form>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- FOOTER -->
+        <footer class="pet-vet-footer" style="margin-top: 400px;">
+            <div class="social-media">
+                <a
+                    href="https://www.facebook.com/Petite-Vet-890687427721944"
+                    target="_blank"
+                    ><img
+                        class="my-icon"
+                        src="./assets/facebook.svg"
+                        alt=""
+                        srcset=""
+                    />
+                </a>
+                <a href="#"
+                    ><img
+                        class="my-icon"
+                        src="./assets/instagram.svg"
+                        alt=""
+                        srcset=""
+                /></a>
+            </div>
+            <div class="copyright">
+                <p>Copyright 2022 Petite Devs</p>
+                <small>Todos los derechos reservados</small>
+            </div>
+            <div class="business-hours">
+                <img
+                    class="my-icon"
+                    src="./assets/calendar.png"
+                    alt=""
+                    srcset=""
+                />
+                <div class="business-hours-text">
+                    <p>Lunes-Viernes 10:00 - 19:00</p>
+                    <p>Sabado 10:00 - 14:00</p>
+                </div>
+            </div>
+        </footer>
+        <script src="/js/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+
+</html>
