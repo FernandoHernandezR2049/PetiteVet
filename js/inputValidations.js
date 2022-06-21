@@ -41,3 +41,28 @@ export function passwordMatches(password, confirmPassword) {
 export function passwordValidation(password) {
   //TODO implement password regex
 }
+
+export function priceValidation(price) {
+  if (price.value <= 0) {
+    return null;
+  }
+  return true;
+}
+
+export function titleValidation(title) {
+  //funcion title
+  const reNombre = /^(?=.{4,50}$)[a-zA-ZáéíóúÁÉÍÓÚ]+( [a-zA-ZáéíóúÁÉÍÓÚ]+)*$/;
+  if (!reNombre.test(title.value)) {
+    return false;
+  } else {
+    return true;
+  } //if else validarTitle
+} //función titleValidation
+
+export function quantityValidation(quantity) {
+  //funcion quantity
+  if (quantity.value <= 0) {
+    return false;
+  }
+  return true;
+}
