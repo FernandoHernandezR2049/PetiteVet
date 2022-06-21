@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-image: url("./../assets/indexPics/vet_clinic_little_rock_vets.jpg");
+    
+}
+
+.container
+{
+    padding-top: 70px;
+    background-image: none;
+}
+
+.card-deck
+{
+    padding-top: 70px;
+    /*display: none;
+    padding-bottom: 550px;*/
+    background-image: none;
+}
+.card
+{
+    
+    text-align: center;
+    background-color: #d93073 !important;
+    opacity: 70%;
+    background-image: none !important;
+}
+
+.card-title
+{
+    background-image: none;
+}
+
+.text-white
+{
+    background-image: none;
+
+}
+
+.card-body
+{
+    background-image: none;
+
+}
+
+.card-text
+{
+    background-image: none;
+}
+
+.lista
+{
+    list-style: none;
+    background-image: none;
+
+}
+
+.pet-vet-footer
+{
+    background-image: none;
+
+}
+
+.social-media
+{
+    background-image: none;
+
+}
+
+.my-icon
+{
+    background-image: none;
+
+}
+
+.copyright
+{
+    background-image: none;
+
+}
