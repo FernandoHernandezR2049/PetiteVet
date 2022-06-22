@@ -31,3 +31,42 @@
     color: aliceblue;
     display: inline-block;
 }
+
+.table
+{
+    max-width: 960px;
+    /* text-align: center; */
+    /* display: block; */
+    align-items: center;
+    margin: 20%;
+    margin-top: 0px;
+}
+
+#btnDelete
+{
+    background-color: rgba(255, 0, 144, 0.673);
+}
+
+.productImage
+{
+    max-width: 200px;
+}
+/*#tbl
+{
+    background-color: red;
+} */
+
+@media screen and (width < 575px)
+{
+    .body{
+        max-width: 100%;
+    }
+
+    .form{
+        max-width: 100%;
+    }
+
+    .productTable{  /*falta responsivo de la tabla */
+        max-width: 100%;
+    }
+}

@@ -51,7 +51,7 @@ export function priceValidation(price) {
 
 export function titleValidation(title) {
   //funcion title
-  const reNombre = /^(?=.{4,50}$)[a-zA-ZáéíóúÁÉÍÓÚ]+( [a-zA-ZáéíóúÁÉÍÓÚ]+)*$/;
+  const reNombre = /^(?=.{4,200}$)\w/; //[a-zA-ZáéíóúÁÉÍÓÚ]+([a-zA-ZáéíóúÁÉÍÓÚ]+)*$ expresión regular chafa
   if (!reNombre.test(title.value)) {
     return false;
   } else {

@@ -4,12 +4,11 @@ let title = document.getElementById("title");
 let description = document.getElementById("description");
 let price = document.getElementById("price");
 let quantity = document.getElementById("quantity");
+let urlimage = document.getElementById("urlimage");
 let table = document.getElementById("productTable");
-let bodyTable = document.getElementsByTagName("tbody");
+let bodyTable = table.getElementsByTagName("tbody");
 let add = document.getElementById("botonAgregar")
 let products = [];
-
-
 
 add.addEventListener("click", (event) => {
     event.preventDefault();
@@ -65,6 +64,40 @@ add.addEventListener("click", (event) => {
             document.getElementById("quantity").style.border = "";
         }, 500);
         return;
-    }
+    }//if de validaciones
+
+quantity = Math.round(quantity.value);
+//console.log(quantity);
+
+price = parseFloat(price.value).toFixed(2);
+//console.log(price);
+
+let elemento = `{"Título":"${title.value}","Descripción":"${description.value}", "Precio":"${price}", "Cantidad":"${quantity}", "Imagen":"${urlimage.value}"}`;
+//                              String                      string                      number                  number                  string
+
+console.log(elemento);
+products.push(JSON.parse(elemento));
+//localStorage.setItem("elementosTabla", JSON.stringify(products));
+
+console.log(products);
+
+let tmp = `<tr id="tbl">
+    <th scope="row">${title.value}</th>
+    <td>${description.value}</td>
+    <td>${price}</td>
+    <td>${quantity}</td>
+    <td><img class="productImage" src="./../assets/cataloguePics/${urlimage.value}"/></td>
+    <td><button id="btnDelete" class="btnDel">Quitar</button></td>
+    </tr>`;
+
+    console.log(tmp);
+    bodyTable[0].innerHTML += tmp;
+    title.value="";
+    description="";
+    price="";
+    quantity="";
+    urlimage.value="";
+    title.focus();
 });
+
 

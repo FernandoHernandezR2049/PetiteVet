@@ -1,14 +1,14 @@
-* {
+body{
     margin: 0;
     padding: 0;
-    background-image: url("./../assets/indexPics/vet_clinic_little_rock_vets.jpg");
-    
+    background-image: url(/assets/indexPics/vet_clinic_little_rock_vets.jpg);
+    background-size: 500px;
 }
 
 .container
 {
     padding-top: 70px;
-    background-image: none;
+
 }
 
 .card-deck
@@ -16,7 +16,7 @@
     padding-top: 70px;
     /*display: none;
     padding-bottom: 550px;*/
-    background-image: none;
+
 }
 .card
 {
@@ -24,6 +24,4 @@
     text-align: center;
     background-color: #d93073 !important;
     opacity: 70%;
-    background-image: none !important;
 }
-
