@@ -66,38 +66,55 @@ add.addEventListener("click", (event) => {
         return;
     }//if de validaciones
 
-quantity = Math.round(quantity.value);
-//console.log(quantity);
+    quantity.value = Math.round(quantity.value);
+    //console.log(quantity);
 
-price = parseFloat(price.value).toFixed(2);
-//console.log(price);
+    price.value = parseFloat(price.value).toFixed(2);
+    //console.log(price);
 
-let elemento = `{"Título":"${title.value}","Descripción":"${description.value}", "Precio":"${price}", "Cantidad":"${quantity}", "Imagen":"${urlimage.value}"}`;
-//                              String                      string                      number                  number                  string
+    let elemento = `{"title":"${title.value}","description":"${description.value}", "price":"${price.value}", "quantity":"${quantity.value}", "urlimage":"${urlimage.value}"}`;
+    //                              String                      string                      number                  number                  string
 
-console.log(elemento);
-products.push(JSON.parse(elemento));
-//localStorage.setItem("elementosTabla", JSON.stringify(products));
+    console.log(elemento);
+    products.push(JSON.parse(elemento));
+    localStorage.setItem("elementosTabla", JSON.stringify(products));
 
-console.log(products);
+    console.log(products);
 
-let tmp = `<tr id="tbl">
+    let tmp = `<tr id="tbl">
     <th scope="row">${title.value}</th>
     <td>${description.value}</td>
-    <td>${price}</td>
-    <td>${quantity}</td>
+    <td>${price.value}</td>
+    <td>${quantity.value}</td>
     <td><img class="productImage" src="./../assets/cataloguePics/${urlimage.value}"/></td>
     <td><button id="btnDelete" class="btnDel">Quitar</button></td>
     </tr>`;
 
     console.log(tmp);
     bodyTable[0].innerHTML += tmp;
-    title.value="";
-    description="";
-    price="";
-    quantity="";
-    urlimage.value="";
+    title.value = "";
+    description.value = "";
+    price.value = "";
+    quantity.value = "";
+    urlimage.value = "";
     title.focus();
 });
 
 
+window.addEventListener("load", function () {
+    if (localStorage.getItem("elementosTabla") != null) {
+        products = JSON.parse(localStorage.getItem("elementosTabla"));
+        console.log(products);
+        products.forEach(element => {
+            bodyTable[0].innerHTML +=
+                `<tr>
+                <th scope="row">${element.title}</th>
+                <td>${element.description}</td>
+                <td>${element.price}</td>
+                <td>${element.quantity}</td>
+                <td><img class="productImage" src="./../assets/cataloguePics/${element.urlimage}"/></td>
+                <td><button id="btnDelete" class="btnDel">Quitar</button></td>
+                </tr>`;
+        });
+    }
+});
