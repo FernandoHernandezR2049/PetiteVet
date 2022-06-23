@@ -40,6 +40,9 @@
 
 .card-title {
     font-weight: bold;
+    font-family: 'Fraunces';
+    font-size: 1rem;
+    color: #D24686
 }
 
 .card-footer {
@@ -77,6 +80,12 @@
     font-weight: Bold;
     font-size: 33px;
     opacity: 1;
+    text-align: center;
+}
+
+.card-img {
+    width: 200px;
+    height: 200px;
     text-align: center;
 }
 
