@@ -19,9 +19,9 @@ export class CatalogueStrategy {
             return (
                 prevItem +
                 `<div class="card">
-                    <img src="${item.img}" class="card-img image">
+                    <h5 class="card-title">${item.name}</h5>
+                    <img src="${item.img}" class="card-img image change">
                     <div class="card-body">
-                        <h5 class="card-title">${item.name}</h5>
                         <p class="card-text">${item.description}</p>
                         <h6 class="mt-3 text">SKU: ${item.SKU}</h6>
                         <h6 class="mt-3 text">Precio: ${item.Precio}</h6>

@@ -9,8 +9,13 @@
 
 .card-title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5 rem;
     font-family: 'Fraunces';
+    color: #D24686
+}
+
+.gap2 {
+    gap: 50px;
 }
 
 .title {
@@ -36,4 +41,10 @@
     text-align: center;
     font-family: 'Commissioner', 'sans-serif' !important;
     align-items: center;
+    font-weight: 600;
+}
+
+.change {
+    width: 200px;
+    height: 200px;
 }

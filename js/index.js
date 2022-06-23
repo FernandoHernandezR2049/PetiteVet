@@ -2,12 +2,6 @@ import { ProductViewStrategy, InfoContext } from "./itemViewsStrategy.js";
 
 
 const items = [{
-    'name': 'Cepillo canino',
-    'img': './../assets/cataloguePics/1.cepillo_canino.png',
-    'description': 'Mango ergonómico. Puntas metálicas. Desenreda y quita pelo muerto. Los colores de la imagen pueden variar.',
-    'SKU': '',
-    'Precio': '$79'
-}, {
     'name': 'Cama',
     'img': './../assets/cataloguePics/3.cama.jpg',
     'description': 'Cama tamaño grande fabricada en tela polar con almohadón que se puede sacar para lavar. Medidas de la cama: 110 cm (largo) x 75 cm (ancho) x 25 cm (altura). Los colores de la imagen pueden variar.',
@@ -19,6 +13,12 @@ const items = [{
     'description': 'Material de la correa: Acero. Peso máximo soportado: 5 kg. Largo: 1.2m',
     'SKU': '',
     'Precio': '$59'
+}, {
+    'name': 'Collar para perro',
+    'img': './../assets/cataloguePics/5.collar_perro.jpg',
+    'description': 'Medidas 3/8 X 8-1/2 (raza pequeña). \n Color rosa. \n Los colores de la imagen pueden variar.',
+    'SKU': '',
+    'Precio': '$79'
 }]
 
 

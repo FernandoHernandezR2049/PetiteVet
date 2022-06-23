@@ -8,6 +8,12 @@ const items = [{
     'SKU': '',
     'Precio': '$79'
 }, {
+    'name': 'Plato para alimento',
+    'img': './../assets/cataloguePics/2.plato_de_comida.jpg',
+    'description': 'Sus dimensiones de 14 x 18 x 4.5 poseen la capacidad suficiente para alimentar a tu mejor amigo y satisfacer su apetito moderado. Los colores de la imagen pueden variar.',
+    'SKU': '',
+    'Precio': '$199'
+}, {
     'name': 'Cama',
     'img': './../assets/cataloguePics/3.cama.jpg',
     'description': 'Cama tamaño grande fabricada en tela polar con almohadón que se puede sacar para lavar. Medidas de la cama: 110 cm (largo) x 75 cm (ancho) x 25 cm (altura). Los colores de la imagen pueden variar.',
@@ -62,3 +68,8 @@ const items = [{
 let data = new InfoContext(new CatalogueStrategy(), items, document.getElementById("productos"));
 
 data.show();
+
+////////////////////////////////////////FOOTER//////////////////////////////////////////////////////////////////////
+
+import { footer } from "./footer.js";
+petiteFooter.innerHTML = footer;
