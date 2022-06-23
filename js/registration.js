@@ -8,7 +8,13 @@ import {
 let register = document.getElementById("btnRegistrar");
 register.addEventListener("click", (event) => {
   event.preventDefault();
-  if (!validarNombre(Name) || !validarTel(Tel) || !validarMail(email)) {
+  if (
+    !validarNombre(Name) ||
+    !validarTel(Tel) ||
+    !validarMail(email) ||
+    !passwordMatches(password, passwordConfirm) ||
+    !passwordValidation(password)
+  ) {
     let lista = "";
     if (!validarNombre(Name)) {
       Name.style.border = "red thin solid";
@@ -32,7 +38,8 @@ register.addEventListener("click", (event) => {
       lista += "<li>Las contraseñas no coinciden</li>";
     }
     if (!passwordValidation(password)) {
-      //TODO implement regex for a minimum requirements
+      password.style.border = "red thin solid";
+      lista += "<li>La contraseña no cumple con los requisitos mínimos</li>";
     }
     document.getElementById(
       "alertValidacionesTexto"
@@ -45,13 +52,11 @@ register.addEventListener("click", (event) => {
       document.getElementById("alertValidaciones").style.display = "none";
     }, 7500);
     setTimeout(function () {
-      document.getElementById("Name").style.border = "";
-    }, 1000);
-    setTimeout(function () {
-      document.getElementById("Tel").style.border = "";
-    }, 1000);
-    setTimeout(function () {
       document.getElementById("email").style.border = "";
+      document.getElementById("Tel").style.border = "";
+      document.getElementById("Name").style.border = "";
+      password.style.border = "";
+      passwordConfirm.style.border = "";
     }, 1000);
     return;
 
