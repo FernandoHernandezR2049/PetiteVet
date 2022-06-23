@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  margin: 10rem;
+  padding-block: 2rem;
+  max-width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  font-family: 'Commissioner', sans-serif;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.containerForm{
+    font-weight: bold;
+}
+
+.containerLogin{
+    padding: 0 3rem;
+}
+
+.containerRegistration{
+    padding: 0 3rem;
+}
+
+.container-top-left{
+    color: #D24686;
+    text-align: center;
+	float: left;
+	width: 100%;
+	padding-top: 25px;
+}
+
+.btn{
+    font-size: .78rem;
+    background-color: #D24686;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    font-weight: bold;
+}
+
+#btnRegistrar:hover{
+  color: gainsboro;
+}
+
+@media (max-width: 700px) {
+    .mainContainer {
+        display: table-row;
+        max-width: 100%;
+    }
+    .superContainer{
+      margin-top: 6rem;
+    }
+  }
