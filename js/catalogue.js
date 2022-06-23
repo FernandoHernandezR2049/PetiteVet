@@ -68,3 +68,8 @@ const items = [{
 let data = new InfoContext(new CatalogueStrategy(), items, document.getElementById("productos"));
 
 data.show();
+
+////////////////////////////////////////FOOTER//////////////////////////////////////////////////////////////////////
+
+import { footer } from "./footer.js";
+petiteFooter.innerHTML = footer;
