@@ -1,84 +1,49 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    background-image: url("./../assets/indexPics/vet_clinic_little_rock_vets.jpg");
-    
+}
+
+body{
+    background-image: url(/assets/indexPics/vet_clinic_little_rock_vets.jpg);
+    background-size: 1500px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
 }
 
 .container
 {
-    padding-top: 70px;
-    background-image: none;
-}
-
-.card-deck
-{
-    padding-top: 70px;
-    /*display: none;
-    padding-bottom: 550px;*/
-    background-image: none;
-}
-.card
-{
-    
+    padding-top: 200px;
     text-align: center;
-    background-color: #d93073 !important;
-    opacity: 70%;
-    background-image: none !important;
+    font-size: 1.5rem;
+    font-family: commissioner;
+
 }
 
-<<<<<<< HEAD
-=======
 .card-title
 {
-    background-image: none;
+    font-size: 1.9rem;
+    text-decoration: in line;
+    font-family: commissioner;
 }
 
-.text-white
+/* .card-deck
 {
-    background-image: none;
-
-}
-
-.card-body
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* display: inline-block; 
+} */
+.card
 {
-    background-image: none;
-
-}
-
-.card-text
-{
-    background-image: none;
+    /* display: inline-block;
+    text-align: center; */
+    background-color: #d93073 !important;
+    opacity: 90%;
 }
 
 .lista
 {
     list-style: none;
-    background-image: none;
-
+    padding: 0;
 }
 
-.pet-vet-footer
-{
-    background-image: none;
-
-}
-
-.social-media
-{
-    background-image: none;
-
-}
-
-.my-icon
-{
-    background-image: none;
-
-}
-
-.copyright
-{
-    background-image: none;
-
-}
->>>>>>> a86f02600290496ad72842f6282ec2cff47a6d1c
