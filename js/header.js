@@ -71,7 +71,7 @@ export const header = `
       /></a>
     </li>
     <li class="nav-item">
-      <a class="btn btn-pink" href="./login.html">Acceso</a>
+      <a class="btn btn-pink" href="./access.html">Acceso</a>
     </li>
   </ul>
 </div>
