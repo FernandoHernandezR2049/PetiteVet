@@ -29,17 +29,14 @@ export function validarMail(txtMail) {
   }
 } //validationEmail fin
 export function passwordMatches(password, confirmPassword) {
-  const passwordRegex = new RegExp(
-    "^(((?=.[a-z])(?=.[A-Z]))|((?=.[a-z])(?=.[0-9]))|((?=.[A-Z])(?=.[0-9])))(?=.{6,})"
-  );
-  if (password.value === confirmPassword.value) {
-    return true;
-  } else {
-    return false;
-  }
+  return password.value === confirmPassword.value ? true : false;
 }
+
 export function passwordValidation(password) {
   //TODO implement password regex
+  const passwordRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$/;
+  ///^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$/;
+  return passwordRegex.test(password.value) ? true : false;
 }
 
 export function priceValidation(price) {
