@@ -25,11 +25,11 @@
     font-family: 'Fraunces';
 }
 
-#products {
+/* #products {
     text-align: center;
     font-family: 'Commissioner', 'sans-serif' !important;
     align-items: center;
-}
+} */
 
 .btn-primary {
     background-color: #D24686 !important;
@@ -45,6 +45,15 @@
 }
 
 .change {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
+}
+
+.row{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+} 
+
+.newP{
+    height: 12rem;
 }

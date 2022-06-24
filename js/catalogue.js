@@ -64,7 +64,21 @@ const items = [{
     'description': 'Plato para mascotas, cachorros, perros, gatos o gatitos. Perfecto para comida seca, comida húmeda, golosinas o agua. Los colores de la imagen pueden variar.',
     'SKU': '',
     'Precio': '$59'
+},{
+    'name': 'Carnaza',
+    'img': './../assets/cataloguePics/9.carnasas.jpg',
+    'description': 'Set de 3 carnazas. Dimensiones del producto: 4 x 13 x 16 cm; 80g',
+    'SKU': '',
+    'Precio': '$29'
+}, {
+    'name': 'Plato para alimento',
+    'img': './../assets/cataloguePics/10.plato_de_comida_plastico.jpg',
+    'description': 'Plato para mascotas, cachorros, perros, gatos o gatitos. Perfecto para comida seca, comida húmeda, golosinas o agua. Los colores de la imagen pueden variar.',
+    'SKU': '',
+    'Precio': '$59'
+    //Se agregaron 2 productos nuevos
 }]
+
 
 
 

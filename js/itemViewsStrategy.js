@@ -18,17 +18,18 @@ export class CatalogueStrategy {
         element.innerHTML = data.reduce((prevItem, item) => {
             return (
                 prevItem +
-                `<div class="card">
-                    <h5 class="card-title">${item.name}</h5>
+                `<div class="row mb-5">
+                <div class="col-lg-6">
                     <img src="${item.img}" class="card-img image change">
-                    <div class="card-body">
-                        <p class="card-text">${item.description}</p>
-                        <h6 class="mt-3 text">SKU: ${item.SKU}</h6>
-                        <h6 class="mt-3 text">Precio: ${item.Precio}</h6>
-                    </div>
-                    <div class="card-footer text-center">
+                </div>    
+                <div class="col-lg-6">
+                    <h5>${item.name}</h5>
+                        <p class="newP">${item.description}</p>
+                        <h6>SKU: ${item.SKU}</h6>
+                        <h6>Precio: ${item.Precio}</h6>
                         <button type="button" class="btn btn-primary move" >Agregar</button>
-                    </div>
+                </div>
+                   
                 </div>
                 `
             );
