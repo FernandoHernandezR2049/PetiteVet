@@ -1,3 +1,6 @@
+import { header } from "./header.js";
+petiteHeader.innerHTML = header;
+
 import { CatalogueStrategy, InfoContext } from "./../js/itemViewsStrategy.js";
 
 
@@ -68,6 +71,7 @@ const items = [{
 let data = new InfoContext(new CatalogueStrategy(), items, document.getElementById("productos"));
 
 data.show();
+
 
 ////////////////////////////////////////FOOTER//////////////////////////////////////////////////////////////////////
 

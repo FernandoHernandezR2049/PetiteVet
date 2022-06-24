@@ -25,3 +25,6 @@ const items = [{
 let data = new InfoContext(new ProductViewStrategy(), items, document.getElementById("newProducts"));
 
 data.show();
+
+import { header } from "./header.js";
+petiteHeader.innerHTML = header;

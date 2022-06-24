@@ -12,8 +12,7 @@ let products = [];
 
 add.addEventListener("click", (event) => {
     event.preventDefault();
-    if (
-        !titleValidation(title) ||
+    if (!titleValidation(title) ||
         !titleValidation(description) ||
         !priceValidation(price) ||
         !quantityValidation(quantity)
@@ -48,23 +47,23 @@ add.addEventListener("click", (event) => {
           `;
         document.getElementById("alertValidaciones").style.display = "block";
 
-        setTimeout(function () {
+        setTimeout(function() {
             document.getElementById("alertValidaciones").style.display = "none";
         }, 7500);
-        setTimeout(function () {
+        setTimeout(function() {
             document.getElementById("title").style.border = "";
         }, 500);
-        setTimeout(function () {
+        setTimeout(function() {
             document.getElementById("description").style.border = "";
         }, 500);
-        setTimeout(function () {
+        setTimeout(function() {
             document.getElementById("price").style.border = "";
         }, 500);
-        setTimeout(function () {
+        setTimeout(function() {
             document.getElementById("quantity").style.border = "";
         }, 500);
         return;
-    }//if de validaciones
+    } //if de validaciones
 
     quantity.value = Math.round(quantity.value);
     //console.log(quantity);
@@ -101,7 +100,7 @@ add.addEventListener("click", (event) => {
 });
 
 
-window.addEventListener("load", function () {
+window.addEventListener("load", function() {
     if (localStorage.getItem("elementosTabla") != null) {
         products = JSON.parse(localStorage.getItem("elementosTabla"));
         console.log(products);
@@ -118,3 +117,7 @@ window.addEventListener("load", function () {
         });
     }
 });
+
+
+import { header } from "./header.js";
+petiteHeader.innerHTML = header;
