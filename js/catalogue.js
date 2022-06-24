@@ -79,7 +79,16 @@ const items = [{
     //Se agregaron 2 productos nuevos
 }]
 
-
+items.sort(function (a, b) {
+    if (a.description.length > b.description.length) {
+      return 1;
+    }
+    if (a.description.length < b.description.length) {
+      return -1;
+    }
+    // a must be equal to b
+    return 0;
+  });
 
 
 let data = new InfoContext(new CatalogueStrategy(), items, document.getElementById("productos"));
