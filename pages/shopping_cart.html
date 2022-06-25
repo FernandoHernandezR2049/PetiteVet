@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap CSS -->
 
     <!--rel="stylesheet"-->
@@ -18,96 +18,72 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./../css/footer_header.css" />
-    <link rel="stylesheet" href="../css/shoppingCart.css">
-    <link rel="stylesheet" href="../css/globalStyles.css">
+    <link rel="stylesheet" href="../css/shoppingCart.css" />
+    <link rel="stylesheet" href="../css/globalStyles.css" />
     <title>Shopping Cart</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-navbar" id = "petiteHeader"></nav>
-    
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light fixed-navbar"
+      id="petiteHeader"
+    ></nav>
+
     <!--MAIN-->
-      <div>
+    <div>
       <h1 class="title">Carrito de compras</h1>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="../assets/shoppingCartDog.png" alt="shoppingDog" width ="500px">
-            </div>
-                <div class="col-md-6">
-                  <h4 class="d-flex justify-content-between align-items-center mb-3">
-                    <span class="text-muted">Carrito</span>
-                    <span class="badge badge-secondary badge-pill">3</span>
-                  </h4>
-                  <ul class="list-group mb-3">
-                    <li class="list-group-item d-flex justify-content-between lh-condensed">
-                      <div>
-                        <h6 class="my-0">Product name</h6>
-                        <small class="text-muted">Brief description</small>
-                      </div>
-                      <span class="text-muted">$12</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between lh-condensed">
-                      <div>
-                        <h6 class="my-0">Second product</h6>
-                        <small class="text-muted">Brief description</small>
-                      </div>
-                      <span class="text-muted">$8</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between lh-condensed">
-                      <img src="../assets/profilePics/Eduardo Mtz.jpg" alt="" width="40px"> 
-                      <div>
-                        <h6 class="my-0">Perro Norteño</h6>
-                        <small class="text-muted">Número de piezas: 2</small>
-                      </div>
-                      <img src="../assets/cart2.svg"></img>
-                      <div>
-                        <span style="display: block;"class="text-muted my-0">$1</span>
-                        <span>$2</span>
-                      </div>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                      <span>Total (USD)</span>
-                      <strong>$20</strong>
-                    </li>
-                  </ul>
-                </div>
-                </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="../assets/shoppingCartDog.png"
+            alt="shoppingDog"
+            width="500px"
+          />
         </div>
-      
+        <div class="col-md-6">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Carrito</span>
+            <span class="badge badge-secondary badge-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3" id="shoppingCartList"></ul>
+        </div>
+      </div>
+    </div>
+
     <!-- ///////////////////////////////FOOTER//////////////////////////////////////////////////////////////////////////////// -->
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <footer class="pet-vet-footer" style="margin-top: 150px">
-        <div class="social-media">
-          <a
-            href="https://www.facebook.com/Petite-Vet-890687427721944"
-            target="_blank"
-            ><img class="my-icon" src="../assets/facebook.svg" alt="" srcset="" />
-          </a>
-          <a href="#"
-            ><img class="my-icon" src="../assets/instagram.svg" alt="" srcset=""
-          /></a>
+      <div class="social-media">
+        <a
+          href="https://www.facebook.com/Petite-Vet-890687427721944"
+          target="_blank"
+          ><img class="my-icon" src="../assets/facebook.svg" alt="" srcset="" />
+        </a>
+        <a href="#"
+          ><img class="my-icon" src="../assets/instagram.svg" alt="" srcset=""
+        /></a>
+      </div>
+      <div class="copyright">
+        <p>Copyright 2022 Petite Devs</p>
+        <small>Todos los derechos reservados</small>
+      </div>
+      <div class="business-hours">
+        <img class="my-icon" src="../assets/calendar.png" alt="" srcset="" />
+        <div class="business-hours-text">
+          <p>Lunes-Viernes 10:00 - 19:00</p>
+          <p>Sabado 10:00 - 14:00</p>
         </div>
-        <div class="copyright">
-          <p>Copyright 2022 Petite Devs</p>
-          <small>Todos los derechos reservados</small>
-        </div>
-        <div class="business-hours">
-          <img class="my-icon" src="../assets/calendar.png" alt="" srcset="" />
-          <div class="business-hours-text">
-            <p>Lunes-Viernes 10:00 - 19:00</p>
-            <p>Sabado 10:00 - 14:00</p>
-          </div>
-        </div>
-      </footer>
-      <script
-        src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-        crossorigin="anonymous"
-      ></script>
-      <script type = "module" src="../js/shopping_cart.js"></script>
-</body>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="../js/shopping_cart.js"></script>
+  </body>
 </html>
