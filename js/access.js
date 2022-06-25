@@ -1,5 +1,4 @@
-import { header } from "./header.js";
-petiteHeader.innerHTML = header;
+
 import {
   passwordValidation,
   passwordMatches,
@@ -65,3 +64,11 @@ register.addEventListener("click", (event) => {
     //functionTimeOut
   } //if principal
 }); // Event Listener fin chavos
+
+//NavBar Dinámico
+import { header } from "./header.js";
+petiteHeader.innerHTML = header;
+
+//Footer Dinámico
+import { footer } from "./footer.js";
+petiteFooter.innerHTML = footer;
