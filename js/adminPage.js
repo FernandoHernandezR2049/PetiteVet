@@ -119,8 +119,10 @@ window.addEventListener("load", function() {
 });
 
 
+//NavBar Dinámico
 import { header } from "./header.js";
 petiteHeader.innerHTML = header;
 
-import {footer} from "./footer.js";
+//Footer Dinámico
+import { footer } from "./footer.js";
 petiteFooter.innerHTML = footer;

@@ -1,6 +1,3 @@
-import { header } from "./header.js";
-petiteHeader.innerHTML = header;
-
 import { CatalogueStrategy, InfoContext } from "./../js/itemViewsStrategy.js";
 
 
@@ -96,7 +93,12 @@ let data = new InfoContext(new CatalogueStrategy(), items, document.getElementBy
 data.show();
 
 
-////////////////////////////////////////FOOTER//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////HEADER-FOOTER//////////////////////////////////////////////////////////////////////
 
+//NavBar Dinámico
+import { header } from "./header.js";
+petiteHeader.innerHTML = header;
+
+//Footer Dinámico
 import { footer } from "./footer.js";
 petiteFooter.innerHTML = footer;

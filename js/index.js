@@ -26,5 +26,10 @@ let data = new InfoContext(new ProductViewStrategy(), items, document.getElement
 
 data.show();
 
+//NavBar Dinámico
 import { header } from "./header.js";
 petiteHeader.innerHTML = header;
+
+//Footer Dinámico
+import { footer } from "./footer.js";
+petiteFooter.innerHTML = footer;

@@ -1,3 +1,4 @@
+//NavBar Dinámico
 import { header } from "./header.js";
 import { InfoContext, ShoppingCartStrategy } from "./itemViewsStrategy.js";
 petiteHeader.innerHTML = header;
