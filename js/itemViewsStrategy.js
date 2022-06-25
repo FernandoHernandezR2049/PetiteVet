@@ -1,47 +1,49 @@
 export class InfoContext {
-  constructor(strategy, data, element) {
-    this.setStrategy(strategy);
-    this.data = data;
-    this.element = element;
-  }
-  setStrategy(strategy) {
-    this.strategy = strategy;
-  }
-  show() {
-    this.strategy.show(this.data, this.element);
-  }
+    constructor(strategy, data, element) {
+        this.setStrategy(strategy);
+        this.data = data;
+        this.element = element;
+    }
+    setStrategy(strategy) {
+        this.strategy = strategy;
+    }
+    show() {
+        this.strategy.show(this.data, this.element);
+    }
 }
 
 export class CatalogueStrategy {
-  show(data, element) {
-    element.innerHTML = data.reduce((prevItem, item) => {
-      return (
-        prevItem +
-        `<div class="row mb-5">
-                <div class="col-lg-6">
-                    <img src="${item.img}" class="card-img image change">
-                </div>    
-                <div class="col-lg-6">
-                    <h5>${item.name}</h5>
-                        <p class="newP">${item.description}</p>
-                        <h6>SKU: ${item.SKU}</h6>
-                        <h6>Precio: ${item.Precio}</h6>
-                        <button type="button" class="btn btn-primary move" >Agregar</button>
-                </div>
-                   
-                </div>
-                `
-      );
-    }, "");
-  }
+    show(data, element) {
+        element.innerHTML = data.reduce((prevItem, item) => {
+            return (
+                prevItem +
+                `<div class="row col-12 col-md-5 col-lg-4 col-xl-3 no-gutters rounded-costume shadow card-47">
+                  <div class="col-md-4 my-auto">
+                    <img src="${item.img}" class="card-img ml-2 image special-img img-change">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">${item.name}</h5>
+                      <p class="card-text">${item.description}</p>
+                      <h6>SKU: ${item.SKU}</h6>
+                      <h6>Precio: ${item.Precio}</h6>
+                      <div class="card-footer bg-transparent d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary mx-auto" >Agregar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>`
+            );
+        }, "");
+    }
 }
 
 export class ProductViewStrategy {
-  show(data, element) {
-    element.innerHTML = data.reduce((prevItem, item) => {
-      return (
-        prevItem +
-        `<div class="card ">
+    show(data, element) {
+        element.innerHTML = data.reduce((prevItem, item) => {
+            return (
+                prevItem +
+                `<div class="card ">
                     <img src="${item.img}" class="card-img">
                     <div class="card-body">
                         <h5 class="card-title">${item.name}</h5>
@@ -51,17 +53,17 @@ export class ProductViewStrategy {
                         <button class="btn btn-link btn-sm float-right">Añadir a carrito</button>
                     </div>
                 </div>`
-      );
-    }, "");
-  }
+            );
+        }, "");
+    }
 }
 
 export class ShoppingCartStrategy {
-  show(data, element) {
-    element.innerHTML = data.reduce((prevItem, item) => {
-      return (
-        prevItem +
-        `
+    show(data, element) {
+        element.innerHTML = data.reduce((prevItem, item) => {
+            return (
+                prevItem +
+                `
                  <li class="list-group-item d-flex justify-content-between lh-condensed">
                       <img src="../assets/cataloguePics/${
                         item.image
@@ -81,17 +83,17 @@ export class ShoppingCartStrategy {
                       </div>
                     </li>
                 `
-      );
-    }, "");
-    const precioTotal = data.reduce((prevItem, item) => {
-      return prevItem + item.cost * item.pieces;
-    }, 0);
-    console.log(precioTotal);
-    element.innerHTML += `
+            );
+        }, "");
+        const precioTotal = data.reduce((prevItem, item) => {
+            return prevItem + item.cost * item.pieces;
+        }, 0);
+        console.log(precioTotal);
+        element.innerHTML += `
     <li class="list-group-item d-flex justify-content-between">
                       <span>Total (MXN)</span>
                       <strong>$${precioTotal}</strong>
                     </li>
     `;
-  }
+    }
 }

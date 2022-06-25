@@ -1,7 +1,7 @@
-.card {
+/* .card {
     padding: 10px;
     display: grid;
-}
+} */
 
 .carrusel {
     padding-top: 70px;
@@ -14,16 +14,17 @@
     color: #D24686
 }
 
-.gap2 {
-    gap: 50px;
-}
-
 .title {
     color: #D24686;
     text-align: center;
     font-size: 2rem;
     font-family: 'Fraunces';
 }
+
+.rounded-costume {
+    border-radius: 2rem;
+}
+
 
 /* #products {
     text-align: center;
@@ -40,20 +41,64 @@
 .card-text {
     text-align: center;
     font-family: 'Commissioner', 'sans-serif' !important;
-    align-items: center;
     font-weight: 600;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.img-change {
+    width: 200px;
+    height: 200px;
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.newP {
+    height: 12rem;
+}
+
+.special-img {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.special-img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .change {
-    width: 400px;
-    height: 300px;
+    align-content: center;
 }
 
-.row{
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-} 
-
-.newP{
-    height: 12rem;
+.gap4 {
+    gap: 2rem;
 }
+
+.centrar-div {
+    justify-content: center !important;
+}
+
+.card-footer {
+    border-top: none !important;
+}
+
+
+/* @media (max-width:1024px) {
+    .centro {
+        height: 10rem !important;
+        width: 10rem !important;
+    }
+    .img-change {
+        height: 10rem !important;
+        width: 10rem !important;
+    }
+    .card-47 {
+        width: 80% !important;
+    }
+} */
