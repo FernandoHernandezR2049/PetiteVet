@@ -39,6 +39,9 @@ export const header = `
     <li class="nav-item">
       <a class="nav-link" href="./pages/contact.html">Contacto</a>
     </li>
+    <li class="nav-item">
+    <a class="nav-link" href="./pages/blog.html">Blog</a>
+  </li>
     <li class="nav-item dropdown">
       <a
         class="nav-link dropdown-toggle"

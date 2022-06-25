@@ -8,6 +8,17 @@ export function validarNombre(txtNombre) {
   } //if else validarNombre
 } //función validarNombre FIN
 
+export function validarMensaje(txtMensaje) {
+  //funcion validar nombre inicio
+  const reMensaje = /^(?=.{4,250}$)[a-zA-ZáéíóúÁÉÍÓÚ]+( [a-zA-ZáéíóúÁÉÍÓÚ]+)*$/;
+  if (!reMensaje.test(txtMensaje.value)) {
+    return false;
+  } else {
+    return true;
+  } //if else validarNombre
+} //función validarNombre FIN
+
+
 export function validarTel(txtTel) {
   // Función para validar teléfono
   let reTel = /^\(?(\d{3})\)?[-]?(\d{3})[-]?(\d{4})$/;

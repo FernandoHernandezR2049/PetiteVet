@@ -1,10 +1,11 @@
-import { validarNombre, validarTel, validarMail } from "./inputValidations.js";
+import { validarNombre, validarTel, validarMail, validarMensaje } from "./inputValidations.js";
 /* Variables del formulario */
 let txtNombre = document.getElementById("Name");
 // console.log(txtNombre);
 let txtMail = document.getElementById("email");
 let txtTel = document.getElementById("Tel");
 let agregar = document.getElementById("btnAgregar");
+let txtMensaje = document.getElementById("message1");
 
 /**Expresiones regulares para la validación de nombre  */
 
@@ -22,7 +23,8 @@ agregar.addEventListener("click", (event) => {
     event.preventDefault();
     if (!validarNombre(txtNombre) ||
         !validarTel(txtTel) ||
-        !validarMail(txtMail)
+        !validarMail(txtMail) ||
+        !validarMensaje(txtMensaje)
     ) {
         let lista = "";
         if (!validarNombre(txtNombre)) {
@@ -40,6 +42,11 @@ agregar.addEventListener("click", (event) => {
         if (!validarTel(txtTel)) {
             txtTel.style.border = "red thin solid";
             lista += "<li>Se debe escribir un teléfono válido</li>";
+        } //ifvalidarTel
+
+        if (!validarMensaje(txtMensaje)) {
+            txtTel.style.border = "red thin solid";
+            lista += "<li>Escribe un mensaje por favor</li>";
         } //ifvalidarTel
 
         document.getElementById(
