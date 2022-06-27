@@ -7,6 +7,8 @@ import {
   validarTel,
 } from "./inputValidations.js";
 let register = document.getElementById("btnRegistrar");
+let users = [];
+
 register.addEventListener("click", (event) => {
   event.preventDefault();
   if (
@@ -62,7 +64,17 @@ register.addEventListener("click", (event) => {
     return;
 
     //functionTimeOut
-  } //if principal
+  }//if principal
+  
+  //localStorage
+  else {
+    let elemento = `{"Name":"${Name.value}","email":"${email.value}", "Tel":"${Tel.value}", "password":"${password.value}"}`;
+//                String                 string                      number                string
+console.log(elemento);
+users.push(JSON.parse(elemento));
+localStorage.setItem("credentials", JSON.stringify(users));
+  }//localStorage
+  
 }); // Event Listener fin chavos
 
 //NavBar Dinámico
@@ -72,3 +84,7 @@ petiteHeader.innerHTML = header;
 //Footer Dinámico
 import { footer } from "./footer.js";
 petiteFooter.innerHTML = footer;
+
+
+//localStorage
+
