@@ -17,9 +17,9 @@
       href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./../css/footer_header.css" />
-    <link rel="stylesheet" href="../css/shoppingCart.css" />
-    <link rel="stylesheet" href="../css/globalStyles.css" />
+    <link rel="stylesheet" href="/css/footer_header.css" />
+    <link rel="stylesheet" href="/css/shoppingCart.css" />
+    <link rel="stylesheet" href="/css/globalStyles.css" />
     <title>Shopping Cart</title>
   </head>
   <body>
@@ -34,7 +34,7 @@
       <div class="row">
         <div class="col-md-6">
           <img
-            src="../assets/shoppingCartDog.png"
+            src="/assets/shoppingCartDog.png"
             alt="shoppingDog"
             width="500px"
           />
@@ -42,7 +42,9 @@
         <div class="col-md-6">
           <h4 class="d-flex justify-content-between align-items-center mb-3">
             <span class="text-muted">Carrito</span>
-            <span class="badge badge-secondary badge-pill">3</span>
+            <span id="itemCount" class="badge badge-secondary badge-pill"
+              >0</span
+            >
           </h4>
           <ul class="list-group mb-3" id="shoppingCartList"></ul>
         </div>
@@ -56,10 +58,10 @@
         <a
           href="https://www.facebook.com/Petite-Vet-890687427721944"
           target="_blank"
-          ><img class="my-icon" src="../assets/facebook.svg" alt="" srcset="" />
+          ><img class="my-icon" src="/assets/facebook.svg" alt="" srcset="" />
         </a>
         <a href="#"
-          ><img class="my-icon" src="../assets/instagram.svg" alt="" srcset=""
+          ><img class="my-icon" src="/assets/instagram.svg" alt="" srcset=""
         /></a>
       </div>
       <div class="copyright">
@@ -67,7 +69,7 @@
         <small>Todos los derechos reservados</small>
       </div>
       <div class="business-hours">
-        <img class="my-icon" src="../assets/calendar.png" alt="" srcset="" />
+        <img class="my-icon" src="/assets/calendar.png" alt="" srcset="" />
         <div class="business-hours-text">
           <p>Lunes-Viernes 10:00 - 19:00</p>
           <p>Sabado 10:00 - 14:00</p>
@@ -84,6 +86,6 @@
       integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
       crossorigin="anonymous"
     ></script>
-    <script type="module" src="../js/shopping_cart.js"></script>
+    <script type="module" src="/js/shopping_cart.js"></script>
   </body>
 </html>
