@@ -1,4 +1,4 @@
-import { CatalogueStrategy, InfoContext } from "./../js/itemViewsStrategy.js";
+import { CatalogueStrategy, InfoContext } from "./itemViewsStrategy.js";
 
 
 const items = [{

@@ -111,7 +111,7 @@ window.addEventListener("load", function() {
                 <td>${element.description}</td>
                 <td>${element.price}</td>
                 <td>${element.quantity}</td>
-                <td><img class="productImage" src="./../assets/cataloguePics/${element.urlimage}"/></td>
+                <td><img class="productImage" src="/assets/cataloguePics/${element.urlimage}"/></td>
                 <td><button id="btnDelete" class="btnDel">Quitar</button></td>
                 </tr>`;
         });
