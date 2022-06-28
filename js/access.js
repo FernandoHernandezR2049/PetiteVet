@@ -7,7 +7,27 @@ import {
   validarTel,
 } from "./inputValidations.js";
 let register = document.getElementById("btnRegistrar");
+let login = document.getElementById("btnLogin");
 let users = [];
+
+
+//eventListenerLogin
+login.addEventListener("click", (event) => {
+  event.preventDefault();
+  localStorage.getItem("credentials")
+  let userLogin = JSON.parse(localStorage.getItem("credentials"));
+  console.log(userLogin);
+  console.log(emailLogin.value);
+  console.log(passwordLogin.value);
+  const result = userLogin.filter(credentials => credentials.email === emailLogin.value && 
+    credentials.password === passwordLogin.value);
+  console.log(result);
+  if (result[0]) {
+    console.log("Inicio de sesión éxitoso");//quitarlo cuando pongas alerts
+  }else {
+    console.log("Credenciales inválidas");//quitarlo cuando pongas alerts
+  }
+});//addEventListenerLogin
 
 register.addEventListener("click", (event) => {
   event.preventDefault();
@@ -73,8 +93,10 @@ register.addEventListener("click", (event) => {
 console.log(elemento);
 users.push(JSON.parse(elemento));
 localStorage.setItem("credentials", JSON.stringify(users));
+  
   }//localStorage
   
+
 }); // Event Listener fin chavos
 
 //NavBar Dinámico
