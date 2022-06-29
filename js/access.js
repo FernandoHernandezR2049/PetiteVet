@@ -20,7 +20,7 @@ login.addEventListener("click", (event) => {
   // console.log(passwordLogin.value);
   const result = userLogin.filter(credentials => credentials.email === emailLogin.value && 
     credentials.password === passwordLogin.value);
-  // console.log(result);
+  // console.log(result); 
   //ALERTA INICIO DE SESIÓN EXITOSO
   if (result[0]) {
     emailLogin.style.border = "green thin solid";
