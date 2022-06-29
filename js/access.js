@@ -15,12 +15,12 @@ login.addEventListener("click", (event) => {
   event.preventDefault();
   localStorage.getItem("credentials")
   let userLogin = JSON.parse(localStorage.getItem("credentials"));
-  console.log(userLogin);
-  console.log(emailLogin.value);
-  console.log(passwordLogin.value);
+  // console.log(userLogin);
+  // console.log(emailLogin.value);
+  // console.log(passwordLogin.value);
   const result = userLogin.filter(credentials => credentials.email === emailLogin.value && 
     credentials.password === passwordLogin.value);
-  console.log(result);
+  // console.log(result);
   //ALERTA INICIO DE SESIÓN EXITOSO
   if (result[0]) {
     emailLogin.style.border = "green thin solid";
