@@ -6,11 +6,11 @@
     text-align: center;
     font-size: 1.5 rem;
     font-family: 'Fraunces';
-    color: #D24686
+    color: var(--main-pink);
 }
 
 .title {
-    color: #D24686;
+    color: var(--main-pink);
     text-align: center;
     font-size: 2rem;
     font-family: 'Fraunces';
@@ -28,8 +28,9 @@
 } */
 
 .btn-primary {
-    background-color: #D24686 !important;
-    border-color: #D24686 !important;
+    background-color: var(--main-pink) !important;
+    border-color: var(--main-pink) !important;
+    font-family: var(--body-font);
     font-weight: bold !important;
 }
 
@@ -82,3 +83,28 @@
 .card-footer {
     border-top: none !important;
 }
+
+.my-icon-arrow {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    position: fixed;
+    right: 2rem;
+  }
+
+  .btnAdminPage{
+    background-color: var(--main-pink);
+    font-size: 1rem;
+    color: white;
+    font-family: var(--body-font);
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border: 4px transparent;
+    
+  }
+
+  .title-principal{
+    text-align: center;
+    
+  }
