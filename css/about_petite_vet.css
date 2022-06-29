@@ -17,7 +17,6 @@ body{
     text-align: center;
     font-size: 1.5rem;
     font-family: commissioner;
-
 }
 
 .card-title
@@ -27,18 +26,11 @@ body{
     font-family: commissioner;
 }
 
-/* .card-deck
-{
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* display: inline-block; 
-} */
 .card
 {
-    /* display: inline-block;
-    text-align: center; */
     background-color: #d93073 !important;
     opacity: 90%;
+    border-radius: 30px 90px !important;    
 }
 
 .lista
@@ -47,3 +39,14 @@ body{
     padding: 0;
 }
 
+.move-card{
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.move-card:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
