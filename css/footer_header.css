@@ -64,3 +64,32 @@
     height: 20px;
   }
 }
+
+/* ////////////////////////////////////////SCROLL////////////////////////////////////////////////////////////////////// */
+.btnArrow{
+  width: 65px;
+  height: 65px;
+  background-color: var(--main-pink);
+  font-size: 2rem;
+  color: white;
+  position: fixed;
+  right: 2rem;
+  bottom: 8rem;
+  border-radius: 50%;
+  z-index: 999;
+  border: 1px solid transparent;
+  transform: scale(0);
+  transition: all 300ms ease;
+}
+
+.btnArrow:hover{
+  transform: scale(1.1) !important;
+  background-color: var(--secondary-pink);
+  
+}
+@media (width <758px){
+  .btnArrow{
+  width: 35px;
+  height: 35px;
+  }
+}

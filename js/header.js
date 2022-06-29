@@ -74,8 +74,9 @@ export const header = `
       /></a>
     </li>
     <li class="nav-item">
-      <a class="btn btn-pink" href="/access.html">Acceso</a>
+      <a class="btn btn-pink" href="/pages/access.html">Acceso</a>
     </li>
   </ul>
 </div>
+<button class="btnArrow" type="button" id="btnPosition">^</button>
 `;
