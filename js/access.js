@@ -10,7 +10,6 @@ let register = document.getElementById("btnRegistrar");
 let login = document.getElementById("btnLogin");
 let users = [];
 
-
 //eventListenerLogin
 login.addEventListener("click", (event) => {
   event.preventDefault();
@@ -22,12 +21,55 @@ login.addEventListener("click", (event) => {
   const result = userLogin.filter(credentials => credentials.email === emailLogin.value && 
     credentials.password === passwordLogin.value);
   console.log(result);
+  //ALERTA INICIO DE SESIÓN EXITOSO
   if (result[0]) {
-    console.log("Inicio de sesión éxitoso");//quitarlo cuando pongas alerts
-  }else {
-    console.log("Credenciales inválidas");//quitarlo cuando pongas alerts
+    emailLogin.style.border = "green thin solid";
+    passwordLogin.style.border = "green thin solid";
+    emailLogin.value = "";
+    passwordLogin.value ="";
+    document.getElementById(
+      "alertLoginSuccess"
+    ).innerHTML = `Inicio de sesión exitoso!
+          `;
+    document.getElementById("alertLoginSuccess").style.display = "block";
+  
+    setTimeout(function () {
+      document.getElementById("alertLoginSuccess").style.display = "none";
+    }, 7500);
+    setTimeout(function () {
+      document.getElementById("emailLogin").style.border = "";
+      document.getElementById("passwordLogin").style.border = "";
+      password.style.border = "";
+      passwordConfirm.style.border = "";
+    }, 1000);
+    return;
+//FIN ALERTA INICIO DE SESIÓN ÉXITOSO
+//INICIO ALERTA CREDENCIALES INVÁLIDAS
+  }if (!result[0]) {
+    emailLogin.style.border = "red thin solid";
+    passwordLogin.style.border = "red thin solid";
+    emailLogin.value = "";
+    passwordLogin.value ="";
+    emailLogin.focus();//quitarlo cuando pongas alerts
   }
-});//addEventListenerLogin
+  document.getElementById(
+    "alertLoginFail"
+  ).innerHTML = `Credenciales inválidas!
+        `;
+  document.getElementById("alertLoginFail").style.display = "block";
+
+  setTimeout(function () {
+    document.getElementById("alertLoginFail").style.display = "none";
+  }, 7500);
+  setTimeout(function () {
+    document.getElementById("emailLogin").style.border = "";
+    document.getElementById("passwordLogin").style.border = "";
+    password.style.border = "";
+    passwordConfirm.style.border = "";
+  }, 1000);
+  return;
+  //FIN ALERTA CREDENCIALES INVÁLIDAS
+});//addEventListenerLogin-Register
 
 register.addEventListener("click", (event) => {
   event.preventDefault();
@@ -86,7 +128,7 @@ register.addEventListener("click", (event) => {
     //functionTimeOut
   }//if principal
   
-  //localStorage
+  //localStorage PARA REGISTRO DE USUARIOS
   else {
     let elemento = `{"Name":"${Name.value}","email":"${email.value}", "Tel":"${Tel.value}", "password":"${password.value}"}`;
 //                String                 string                      number                string
@@ -97,7 +139,7 @@ localStorage.setItem("credentials", JSON.stringify(users));
   }//localStorage
   
 
-}); // Event Listener fin chavos
+}); // FIN Event Listener PARA REGISTRO DE USUARIOS CHAVOS
 
 //NavBar Dinámico
 import { header } from "./header.js";
