@@ -1,16 +1,21 @@
+/* .card {
+    padding: 10px;
+    display: grid;
+} */
+
 .carrusel {
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
 .card-title {
     text-align: center;
     font-size: 1.5 rem;
     font-family: 'Fraunces';
-    color: var(--main-pink);
+    color: #D24686
 }
 
 .title {
-    color: var(--main-pink);
+    color: #D24686;
     text-align: center;
     font-size: 2rem;
     font-family: 'Fraunces';
@@ -20,10 +25,16 @@
     border-radius: 2rem;
 }
 
+
+/* #products {
+    text-align: center;
+    font-family: 'Commissioner', 'sans-serif' !important;
+    align-items: center;
+} */
+
 .btn-primary {
-    background-color: var(--main-pink) !important;
-    border-color: var(--main-pink) !important;
-    font-family: var(--body-font);
+    background-color: #D24686 !important;
+    border-color: #D24686 !important;
     font-weight: bold !important;
 }
 
@@ -77,26 +88,17 @@
     border-top: none !important;
 }
 
-.my-icon-arrow {
-    width: 40px;
-    height: 40px;
-    margin: 0 10px;
-    position: fixed;
-    right: 2rem;
-  }
 
-  .btnAdminPage{
-    background-color: var(--main-pink);
-    font-size: 1rem;
-    color: white;
-    font-family: var(--body-font);
-    font-weight: bold !important;
-    font-size: 1rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
-    border: 4px transparent;
-    border-radius: 5px;
-  }
-
-  .title-principal{
-    text-align: center;
-  }
+/* @media (max-width:1024px) {
+    .centro {
+        height: 10rem !important;
+        width: 10rem !important;
+    }
+    .img-change {
+        height: 10rem !important;
+        width: 10rem !important;
+    }
+    .card-47 {
+        width: 80% !important;
+    }
+} */
