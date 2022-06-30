@@ -1,16 +1,16 @@
 .titulo {
     text-align: center;
     color: #D93073;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Commisioner' sans-serif;
     padding-top: 50px;
 }
 
 .form {
-    background-color: #3C474B;
-    margin: 5%;
+    padding: 3%;
+    background-color: gainsboro;
+    margin: 3%;
     display: block;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: aliceblue;
+    font-family: 'Comissioner' sans-serif;
     border-radius: 10px;
 }
 
@@ -22,51 +22,62 @@
     border-radius: 12px;
 }
 
+#botonAgregar {
+    align-content: center;
+}
+
 .btnAdd {
+    align-items: center;
+    margin: 1em;
     background-color: #D93073;
     border-radius: 5px;
     border-color: #D93073;
     border-width: 1px;
     border-style: solid;
     color: aliceblue;
-    display: inline-block;
-}
-
-.table
-{
-    max-width: 960px;
-    /* text-align: center; */
-    /* display: block; */
     align-items: center;
-    margin: 20%;
+}
+
+.inventario {
+    padding: 3%;
+    color: #D93073;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.table {
+    max-width: 960px;
+    align-items: center;
+    margin: 0 auto;
     margin-top: 0px;
+    font-family: 'Comissioner' sans-serif;
+    padding: 2fr;
 }
 
-#btnDelete
-{
-    background-color: rgba(255, 0, 144, 0.673);
+#btnDelete {
+    background-color: #D93073;
+    border-radius: 10px;
+    border: #D93073;
+    color: aliceblue;
 }
 
-.productImage
-{
-    max-width: 200px;
+.productImage {
+    max-width: 80px;
 }
-/*#tbl
-{
-    background-color: red;
-} */
 
-@media screen and (width < 575px)
-{
-    .body{
+
+@media screen and (width < 575px) {
+    .body {
         max-width: 100%;
     }
 
-    .form{
+    .form {
         max-width: 100%;
     }
 
-    .productTable{  /*falta responsivo de la tabla */
+    .productTable {
+        /*falta responsivo de la tabla */
         max-width: 100%;
     }
 }

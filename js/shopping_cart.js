@@ -36,3 +36,15 @@ cartItems.add({
   pieces: "2",
   cost: 130,
 });
+cartItems.add({
+  image: "2.plato_de_comida.jpg",
+  name: "Plato de comida",
+  pieces: "2",
+  cost: 130,
+});
+cartItems.add({
+  image: "2.plato_de_comida.jpg",
+  name: "Plato de comida",
+  pieces: "2",
+  cost: 130,
+});
