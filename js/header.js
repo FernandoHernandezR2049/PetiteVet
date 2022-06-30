@@ -1,13 +1,11 @@
 export const header = `
 <a
-  class="navbar-brand"
+  class="navbar-brand petite-title"
   href="/index.html"
-  style="font-family: 'Lobster'; color: #d93073; font-size: 2rem"
   ><img
     src="/assets/logo.png"
     alt="Petite Vet Logo"
-    width="50px"
-    height="33px"
+    height="30px"
   />
   Petite Vet</a
 >
@@ -20,7 +18,7 @@ export const header = `
   aria-expanded="false"
   aria-label="Toggle navigation"
 >
-  <span class="navbar-toggler-icon" style="color: #d93073"></span>
+  <span class="navbar-toggler-icon"></span>
 </button>
 
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -32,8 +30,8 @@ export const header = `
       <a class="nav-link" href="/pages/catalogue.html">Catálogo</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" href="/pages/services.html"
-        >Servicios <span class="sr-only">(current)</span></a
+      <a class="nav-link " href="/pages/services.html"
+        >Servicios <span class="sr-only"></span></a
       >
     </li>
     <li class="nav-item">
@@ -45,7 +43,7 @@ export const header = `
     <li class="nav-item dropdown">
       <a
         class="nav-link dropdown-toggle"
-        href="#"
+        href=""
         id="navbarDropdownMenuLink"
         role="button"
         data-toggle="dropdown"
@@ -54,12 +52,8 @@ export const header = `
         Sobre nosotros
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="/pages/aboutUs.html"
-          >Equipo desarrollador (Vet Devs)</a
-        >
-        <a class="dropdown-item" href="/pages/about_petite_vet.html"
-          >Veterinaria Petit Vet</a
-        >
+        <a class="dropdown-item" href="/pages/aboutUs.html">Equipo desarrollador (Vet Devs)</a>
+        <a class="dropdown-item" href="/pages/about_petite_vet.html">Veterinaria Petit Vet</a>
       </div>
     </li>
   </ul>
