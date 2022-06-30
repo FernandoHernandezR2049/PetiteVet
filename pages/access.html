@@ -14,6 +14,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/footer_header.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"/>
+<<<<<<< HEAD
+=======
+    <link rel="stylesheet" href="/css/globalStyles.css" />
+
+>>>>>>> 51e446ae038ab4936bc8a9e8bfa137d8096f08fe
     <title>Access</title>
 </head>
 
@@ -27,35 +32,40 @@
 
 <!-- LOGIN FORM MUCHO OJO SEÑORES ESTO ES PARA INICIO DE SESIÓN OKEI GRACIAS DE NADA -->
 <div class="superContainer">
-    <div class="mainContainer"> 
+    <div class="mainContainer">
         <div class="containerLogin">
-                <div class="container-top-left">
-                    <h2>Inicia Sesión</h2>
-                    <p>Ingresa tu correo y contraseña para iniciar sesión.</p>
-                </div>
 
-                <div class="containerForm">
-                    <div class="form-group">
-                        <label for="emailLogin">Correo electrónico:</label>
-                        <input type="email" class="form-control" id="emailLogin" placeholder="Ingresa tu correo electrónico" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="passwordLogin">Contraseña:</label>
-                        <input type="password" class="form-control" id="passwordLogin" placeholder="Ingresa tu contraseña" required>
-                    </div>
+            <div class="container-top-left">
+                <h2>Inicia Sesión</h2>
+                <p style="font-weight: bold">Ingresa tu correo y contraseña para iniciar sesión.</p>
+                <div class="alert alert-success alert fade show" style="display:none" role="alert" id="alertLoginSuccess"></div>
+                <div class="alert alert-danger alert fade show" style="display:none" role="alert" id="alertLoginFail"></div>
+            </div>
+            <div class="containerForm">
+                <div class="form-group">
+                    <label for="emailLogin">Correo electrónico:</label>
+                    <input type="email" class="form-control" id="emailLogin" placeholder="Ingresa tu correo electrónico"
+                        required>
                 </div>
-                    <button type="submit" id="btnLogin" class="btn btn-md">Iniciar Sesión</button>
+                <div class="form-group">
+                    <label for="passwordLogin">Contraseña:</label>
+                    <input type="password" class="form-control" id="passwordLogin" placeholder="Ingresa tu contraseña"
+                        required>
+                </div>
+            </div>
+            <button type="submit" id="btnLogin" class="btn btn-md">Iniciar Sesión</button>
         </div>
-            
+
         <!-- REGISTRATION FORM MUCHO OJO SEÑORES ESTO ES PARA REGISTRAR USUARIOS OKEI GRACIAS DE NADA -->
         <div class="containerRegistration">
-            <div class="alert alert-danger alert fade show" style="display:none" role="alert" id="alertValidaciones">
-                <p id="alertValidacionesTexto"></p>
-            </div>
-                <div class="container-top-left">
-                    <h2 class="registrar">Regístrate</h2>
-                    <p>Completa los campos para registrarte.</p>
+
+            <div class="container-top-left">
+                <h2 class="registrar">Regístrate</h2>
+                <p style="font-weight: bold">Completa los campos para registrarte.</p>
+                <div class="alert alert-danger alert fade show" style="display:none" role="alert" id="alertValidaciones">
+                    <p id="alertValidacionesTexto" style="text-align:left" ></p>
                 </div>
+            </div>
 
             <div class="containerForm">
                 <div class="form-group padding">
@@ -65,7 +75,7 @@
 
                 <div class="form-group">
                     <label for="Tel">Teléfono:</label>
-                    <input type="tel" class="form-control" id="Tel"  placeholder="Ingresa tu número telefónico">
+                    <input type="tel" class="form-control" id="Tel" placeholder="Ingresa tu número telefónico">
                 </div>
                 <div class="form-group">
                     <label for="email">Correo electrónico:</label>
@@ -73,13 +83,15 @@
                 </div>
                 <div class="form-group">
                     <label for="email">Contraseña:</label>
-                    <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" required>
-                    <small id="passwordHelp" class="form-text text-muted">La contraseña debe contener un número, una letra mayúscula, 
-                        una minúscula y tener al menos 8 caracteres de longitud.</small>
+                    <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña"
+                        required>
+                    <small id="passwordHelp" class="form-text text-muted" style="font-weight: bold">La contraseña debe contener un número, una
+                        letra mayúscula, una minúscula y tener al menos 8 caracteres de longitud.</small>
                 </div>
                 <div class="form-group">
                     <label for="passwordConfirm">Confirma tu contraseña:</label>
-                    <input type="password" class="form-control" id="passwordConfirm" placeholder="Confirma tu contraseña" required>
+                    <input type="password" class="form-control" id="passwordConfirm"
+                        placeholder="Confirma tu contraseña" required>
                 </div>
                 <button type="submit" id="btnRegistrar" class="btn btn-md">Regístrate</button>
             </div>
@@ -90,7 +102,7 @@
     <!-- ///////////////////////////////////////////////////////////////// -->
     <!-- //////////////////////////FOOTER//////////////////////////// -->
     <!-- ///////////////////////////////////////////////////////////////// -->
-        <footer id="petiteFooter" class="pet-vet-footer" style="margin-top: 400px;">
+        <footer id="petiteFooter" class="pet-vet-footer" style="margin-top: 5rem;">
         </footer>
     <!-- ///////////////////////////////////////////////////////////////// -->
     <!-- //////////////////////////SCRIPT//////////////////////////// -->
