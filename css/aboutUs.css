@@ -3,86 +3,76 @@
     padding: 0;
 }
 
-.container {
-    text-align: center;
-    background: #f5f5f5;
-    margin-top: 100px;
 
-}
 
-.header {
-    color: #444;
-    font-size: 40px;
+.header h1 {
+    font-size: 45px;
     margin: auto;
     line-height: 50px;
-    font-family: Fraunces;
-    color: #D24686;
-
-}
-
-.sub-container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.team {
-    margin: 10px;
-    padding: 22px;
-    max-width: 30%;
-    cursor: pointer;
-    transition: 0.4s;
-    box-sizing: border-box;
-    background-color: #e86ea6;
-    border-radius: 12px;
-    font-family: Commissioner;
-    min-width: 300px;
-}
-
-.team:hover {
-    background:#D24686;
-    border-radius: 12px;
-}
-
-.team img {
-    max-width: 200px;
-    max-height: 300px;
-    border-radius: 12px;
-}
-
-.name {
-    padding: 12px;
+    font-family: "Commissioner";
+    color: #d93073 !important;
     font-weight: bold;
-    font-size: 16px;
+}
+
+.row{
+    border-radius: 12px !important;
+}
+
+.card { 
+    background-color: #d93073 !important;
+    cursor: pointer;
+    border: transparent !important;
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 2px 5px, rgba(0, 0, 0, .60) 0px 2px 4px;
+    
+}
+
+.card-img-top {
+    height: 23vw;
+    object-fit: fill;
+    background-color: white;
+}
+
+h2{
+    font-weight: bolder !important;
+    font-size: 28px !important;
     text-transform: uppercase;
-    color: rgb(238, 232, 232);
-    font-family: Verdana;
+    color: white;
+    font-family: "Commissioner";
 }
 
 .job {
     font-style: italic;
-    color: rgb(238, 232, 232);
-    font-family: Verdana;
+    font-size: 18px;
+    color: white;
+    font-family: "Commissioner";
 }
 
 .about {
     margin: 20px 0;
     font-weight: lighter;
-    color: rgb(238, 232, 232);
-    font-family: Verdana;
+    font-size: 18px;
+    color: white;
+    font-family: "Commissioner";
 }
 
+.card:hover{
+    background-color: #d93073 !important;
+    transition: .4s;
+}
+.card:hover .social-links { 
+    background-color: #d93073 !important; 
+    transition: .4s;
+}
+
+
 .social-links {
-    margin: 14px;
+    background-color: #d93073 !important;
+    font-size: 28px;
+    border-color: transparent !important;
 }
 
 .social-links a {
     display: inline-block;
-    height: 30px;
-    width: 30px;
     transition: .4s;
 }
 
@@ -91,11 +81,17 @@
 }
 
 .social-links a i {
-    color: rgb(238, 232, 232);
+    color: white;
 }
 
-@media screen and (max-width: 600px) {
-    .teams {
-        max-width: 100%;
+@media (max-width: 700px) {
+
+    .card{
+        min-width: 200px;
+        max-height: 100%;
+    }
+    .card-img-top{
+        height: 85vw;
+
     }
 }
