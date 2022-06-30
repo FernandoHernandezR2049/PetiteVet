@@ -68,11 +68,7 @@ export const header = `
       /></a>
     </li>
     <li class="nav-item">
-<<<<<<< HEAD
       <a class="btn btn-pink" href="/access.html">Acceso</a>
-=======
-      <a class="btn btn-pink" href="/pages/access.html">Acceso</a>
->>>>>>> 51e446ae038ab4936bc8a9e8bfa137d8096f08fe
     </li>
   </ul>
 </div>
