@@ -7,6 +7,9 @@ let txtTel = document.getElementById("Tel");
 let agregar = document.getElementById("btnAgregar");
 let txtMensaje = document.getElementById("message1");
 
+// add by j
+let robot = document.getElementById("btnRobot");
+let close = document.getElementById("closeAlert");
 /**Expresiones regulares para la validación de nombre  */
 
 /* AQUI VAN TODAS LAS FUNCIONES AMIKOS*/
@@ -68,12 +71,25 @@ agregar.addEventListener("click", (event) => {
         setTimeout(function() {
             document.getElementById("email").style.border = "";
         }, 500);
+        
         return;
 
         //functionTimeOut
     } //if principal
     sendEmail(txtNombre, txtMail, txtTel, message1);
 }); // Event Listener fin chavos
+
+
+// add by j
+robot.addEventListener("click", (event) => {
+    agregar.disabled =false;
+    robot.disabled = true;
+});
+
+close.addEventListener("click", (event) => {
+    location.reload();
+});
+
 
 /**Función enviar email */
 function sendEmail() {
@@ -85,7 +101,7 @@ function sendEmail() {
         From: "eduardodecelaya005@gmail.com",
         Subject: "Correo nuevo",
         Body: `Name: ${txtNombre.value} <br/> Email: ${txtMail.value}<br/>Telephone: ${txtTel.value}<br/> Message: ${message1.value}`,
-    }).then((message) => alert(message));
+    }).then((message) => {if(message == "OK"){ document.getElementById("succes").style.display = "block";  agregar.disabled =true;}});// add by j
 }
 
 //NavBar Dinámico

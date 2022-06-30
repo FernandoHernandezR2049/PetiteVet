@@ -7,7 +7,7 @@
 
 
 .title {
-    color: #D24686;
+    color: #d93073;
     text-align: center;
     font-size: 2rem;
     font-family: 'Fraunces';
@@ -15,18 +15,18 @@
 
 
 .btn-primary {
-    background-color: #D24686 !important;
-    border-color: #D24686 !important;
+    background-color: #d93073 !important;
+    border-color: #d93073 !important;
     font-weight: bold !important;
 }
 
 
 :root{
-    --color: #D24686;
+    --color: #d93073;
 }
 
 .colorPet{
-    background-color: #FFA1CC !important;
+    background-color: #ffa1cc !important;
 }
 
 .colorBtn{
@@ -37,3 +37,15 @@
 .colorTitulo{
     color: #D93073 !important;
 }
+
+.borde{
+    border-bottom-left-radius: 2rem !important;
+    border-bottom-right-radius: 2rem !important;
+    
+}
+
+.bordetop{
+    border-top-left-radius: 2rem !important;
+    border-top-right-radius: 2rem !important;
+}
+
