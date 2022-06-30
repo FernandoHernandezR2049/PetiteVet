@@ -7,22 +7,18 @@
     text-align: center;
     color: #D24686 !important;
     display: inline-block;
-    height: 30px;
-    width: 450px;
     transition: .4s;
 }
 
 .socialMedia {
-    margin: 10px;
-    padding-top: 60px;
+    margin: 1rem;
+    padding-top: 4rem ;
     text-align: center;
     min-width:fit-content;
 }
 
 .socialMedia a {
     display: inline-block;
-    height: 30px;
-    width: 90px;
     transition: .4s;
 }
 
@@ -30,7 +26,6 @@
 {
     display: inline-block;
     height: auto;
-    width: 300px;
     transition: .4s;
     color: #D24686;
 }
