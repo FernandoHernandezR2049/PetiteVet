@@ -1,12 +1,12 @@
-import { ProductViewStrategy, InfoContext } from "./itemViewsStrategy.js";
+import { ProductViewStrategy, InfoContext, CommentViewStrategy } from "./itemViewsStrategy.js";
 
 
 const items = [{
-    'name': 'Cama',
-    'img': './../assets/cataloguePics/3.cama.jpg',
-    'description': 'Cama tamaño grande fabricada en tela polar con almohadón que se puede sacar para lavar. Medidas de la cama: 110 cm (largo) x 75 cm (ancho) x 25 cm (altura). Los colores de la imagen pueden variar.',
+    'name': 'Carnaza',
+    'img': './../assets/cataloguePics/9.carnasas.jpg',
+    'description': 'Set de 3 carnazas. Dimensiones del producto: 4 x 13 x 16 cm; 80g',
     'SKU': '',
-    'Precio': '$250'
+    'Precio': '$29'
 }, {
     'name': 'Correa',
     'img': './../assets/cataloguePics/4.correa_perro.jpg',
@@ -22,9 +22,28 @@ const items = [{
 }]
 
 
+const itemsComments = [{
+    'usuario': 'Nora Alicia',
+    'valoracion': 'Muy bien, excelente trato y muy buena la Doctora.',
+    'imgComentario': '/assets/indexPics/dogLogo.png'
+}, {
+    'usuario': 'Jimena Núñez Álvarez',
+    'valoracion': 'Atendió muy bien a mis perros.',
+    'imgComentario': '/assets/indexPics/dogLogo.png'
+}, {
+    'usuario': 'Alejandro Farías',
+    'valoracion': 'Excelente veterinaria, llevé a mis gatitos y quedé feliz por el trato tan profesional, lo recomiendo mucho.',
+    'imgComentario': '/assets/indexPics/dogLogo.png'
+}]
+
+
 let data = new InfoContext(new ProductViewStrategy(), items, document.getElementById("newProducts"));
 
+let data2 = new InfoContext(new CommentViewStrategy(), itemsComments, document.getElementById("comments"));
+
 data.show();
+
+data2.show();
 
 //NavBar Dinámico
 import { header } from "./header.js";
