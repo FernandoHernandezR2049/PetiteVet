@@ -1,6 +1,7 @@
 .container
 {
-    font-family: commissioner;
+    font-family: 'Commissioner' !important;
+    font-weight: bold !important;
 }
 
 .horario{

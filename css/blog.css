@@ -49,3 +49,7 @@
     border-top-right-radius: 2rem !important;
 }
 
+.card-text{
+    font-family: 'Commissioner' !important;
+    font-weight: bold !important;
+}
