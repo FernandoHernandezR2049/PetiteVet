@@ -105,16 +105,16 @@ register.addEventListener("click", (event) => {
     if (!passwordValidation(password)) {
       password.style.border = "red thin solid";
       lista += "<li>La contraseña no cumple con los requisitos mínimos</li>";
-    }
+    } 
     document.getElementById(
-      "alertValidacionesTexto"
+      "alertRegisterFail"
     ).innerHTML = `Los campos deben ser llenados correctamente.
           <ul>${lista} </ul>
           `;
-    document.getElementById("alertValidaciones").style.display = "block";
+    document.getElementById("alertRegisterFail").style.display = "block";
 
     setTimeout(function () {
-      document.getElementById("alertValidaciones").style.display = "none";
+      document.getElementById("alertRegisterFail").style.display = "none";
     }, 7500);
     setTimeout(function () {
       document.getElementById("email").style.border = "";
@@ -123,22 +123,54 @@ register.addEventListener("click", (event) => {
       password.style.border = "";
       passwordConfirm.style.border = "";
     }, 1000);
-    return;
-
-    //functionTimeOut
+    
   }//if principal
   
   //localStorage PARA REGISTRO DE USUARIOS
   else {
-    let elemento = `{"Name":"${Name.value}","email":"${email.value}", "Tel":"${Tel.value}", "password":"${password.value}"}`;
-//                String                 string                      number                string
-console.log(elemento);
-users.push(JSON.parse(elemento));
-localStorage.setItem("credentials", JSON.stringify(users));
-  
-  }//localStorage
-  
+    {let elemento = `{"Name":"${Name.value}","email":"${email.value}", "Tel":"${Tel.value}", "password":"${password.value}"}`;
+    //                String                 string                      number                string
+    console.log(elemento);
+    users.push(JSON.parse(elemento));
+    localStorage.setItem("credentials", JSON.stringify(users))};
 
+
+{
+Name.style.border = "green thin solid";
+Tel.style.border = "green thin solid";
+email.style.border = "green thin solid";
+password.style.border ="green thin solid";
+passwordConfirm.style.border = "green thin solid";
+Name.value = "";
+Tel.value = "";
+email.value = "";
+password.value = "";
+passwordConfirm.value = "";
+
+  
+  document.getElementById(
+    "alertRegisterSuccess"
+  ).innerHTML = `Registro exitoso!
+        `;
+  document.getElementById("alertRegisterSuccess").style.display = "block";
+
+  setTimeout(function () {
+    document.getElementById("alertRegisterSuccess").style.display = "none";
+  }, 7500);
+  setTimeout(function () {
+    document.getElementById("email").style.border = "";
+    document.getElementById("Tel").style.border = "";
+    document.getElementById("Name").style.border = "";
+    password.style.border = "";
+    passwordConfirm.style.border = "";
+  }, 1000);
+  return;
+  }//AQUI TERMINA LA VALIDACION CORRECTA DE REGISTRO DE USUARIOS MUCHO OJO CHIKES
+
+  }//localStorage
+
+
+  
 }); // FIN Event Listener PARA REGISTRO DE USUARIOS CHAVOS
 
 //NavBar Dinámico

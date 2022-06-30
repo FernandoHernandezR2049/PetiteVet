@@ -17,9 +17,13 @@ body {
   font-family: 'Commissioner', sans-serif;
 }
 
-#alertLoginSuccess, #alertLoginFail, #alertValidaciones{
+#alertLoginSuccess, #alertLoginFail, #alertRegisterSuccess, #alertRegisterFail{
     font-family: 'Commissioner', sans-serif;
     font-weight: bold;
+}
+
+#alertRegisterFail{
+    text-align: left !important;
 }
 
 h2{
