@@ -4,11 +4,11 @@
 }
 
 body{
-    background-image: url(/assets/indexPics/vet_clinic_little_rock_vets.jpg);
-    background-size: 1500px;
+    background-image: url(/assets/indexPics/Background_cat_dog.jpg);
+    background-size: 1975px;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: center;
+    background-position: center center;
 }
 
 .container
@@ -16,25 +16,28 @@ body{
     padding-top: 200px;
     text-align: center;
     font-size: 1.5rem;
-    font-family: commissioner;
+    font-family: "Commissioner";
 }
 
 .card-title
 {
     font-size: 1.9rem;
-    text-decoration: in line;
-    font-family: commissioner;
+    font-weight: bold;
+    font-family: "Commissioner";
 }
 
 .card
 {
     background-color: #d93073 !important;
-    opacity: 90%;
-    border-radius: 30px 90px !important;    
+    opacity: 96%;
+    border-radius: 20px !important;
+    margin-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 2px 5px, rgba(0, 0, 0, .60) 0px 2px 4px;
 }
 
-.lista
+.lista, .about
 {
+    font-size: large;
     list-style: none;
     padding: 0;
 }
@@ -49,4 +52,42 @@ body{
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+.subContainer{
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.subContainer:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.subContainer{
+    max-width: 1110px;
+    margin: 0 auto;
+    opacity: 96%;
+}
+
+.card-title{
+    font-family: "Commissioner" !important;
+    font-size: 1.9rem;
+}
+
+.card-text{
+    font-family: "Commissioner" !important;
+    font-size: large;
+}
+
+@media (max-width: 1024px){
+    body{
+        background-attachment: fixed;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+    
 }
