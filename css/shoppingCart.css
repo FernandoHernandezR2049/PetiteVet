@@ -5,62 +5,29 @@
   text-align: center;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-main {
-  width: 100%;
-  height: 100%;
-}
-
 .card {
-  display: grid;
-  min-width: 1200px;
-  width: 30%;
-  margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  width: 75%;
   border-radius: 10px;
-}
-
-.left {
-  align-items: center;
-}
-
-.dogImage {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  align-content: center;
+  padding: 10%;
   margin: 0 auto;
+  background-image: url(/assets/shoppingCartDog.png);
+  background-size: 600px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: left center;
+  font-family: 'Comissioner' sans-serif;
+  color: #D24686;
 }
 
-.right {
-  width: 100%;
-  /* display: flex;
-  flex-direction: column; */
-  row-gap: 24px;
-  padding: 35px 40px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
+@media only screen and (max-width: 768px) {
 
-@media (max-width: 768px) {
+  /* For mobile phones: */
+  .main {
+    width: 100%;
+  }
+
   .card {
-    max-width: 100%;
-  }
-
-  .left {
-    padding-bottom: 1rem;
-  }
-
-  .right {
-    padding-bottom: 1rem;
-    overflow: hidden;
-  }
-
-  .dogImage {
-    max-width: fit-content;
+    grid-template-columns: 1;
   }
 }
