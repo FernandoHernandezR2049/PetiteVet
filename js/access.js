@@ -14,7 +14,7 @@ let users = [];
 login.addEventListener("click", (event) => {
   event.preventDefault();
   localStorage.getItem("credentials")
-  let userLogin = JSON.parse(localStorage.getItem("credentials"));
+  let userLogin = JSON.parse(localStorage.getItem("credentials")) || null || [];
   // console.log(userLogin);
   // console.log(emailLogin.value);
   // console.log(passwordLogin.value);
@@ -32,6 +32,7 @@ login.addEventListener("click", (event) => {
     ).innerHTML = `Inicio de sesión exitoso!
           `;
     document.getElementById("alertLoginSuccess").style.display = "block";
+    document.location.href="/index.html";
   
     setTimeout(function () {
       document.getElementById("alertLoginSuccess").style.display = "none";
