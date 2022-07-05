@@ -2,6 +2,11 @@
     padding-top: 50px;
 }
 
+.uno {
+    margin: 2rem;
+    padding: 2rem;
+}
+
 .card-title {
     text-align: center;
     font-size: 1.5 rem;
@@ -83,20 +88,20 @@
     margin: 0 10px;
     position: fixed;
     right: 2rem;
-  }
+}
 
-  .btnAdminPage{
+.btnAdminPage {
     background-color: var(--main-pink);
     font-size: 1rem;
     color: white;
     font-family: var(--body-font);
     font-weight: bold !important;
     font-size: 1rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
     border: 4px transparent;
     border-radius: 5px;
-  }
+}
 
-  .title-principal{
+.title-principal {
     text-align: center;
-  }
+}
