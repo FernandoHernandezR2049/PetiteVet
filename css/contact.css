@@ -1,12 +1,12 @@
 .container
 {
-    font-family: 'Commissioner' !important;
+    font-family: var(--body-font) !important;
     font-weight: bold !important;
 }
 
 .horario{
     text-align: center;
-    color: #D24686 !important;
+    color: var(--main-pink) !important;
     display: inline-block;
     transition: .4s;
 }
@@ -28,7 +28,7 @@
     display: inline-block;
     height: auto;
     transition: .4s;
-    color: #D24686;
+    color: var(--main-pink) !important;
 }
 
 .socialMedia a:hover {
@@ -36,16 +36,16 @@
 }
 
 .socialMedia a i {
-    color: #D24686;
+    color: var(--main-pink) !important;
 
 }
 
 .btn
 {
-    font-family: 'Inter';
+    font-family: var(--body-font);
     font-weight: bold;
-    background-color: #D24686 !important;
-    border-color: #D24686!important;
+    background-color: var(--main-pink) !important;
+    border-color: var(--main-pink) !important;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; 
 }
 

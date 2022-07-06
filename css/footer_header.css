@@ -16,15 +16,16 @@
 }
 
 .btn-pink {
-  color: white;
-  background-color: var(--main-pink);
+  color: white !important;
+  background-color: var(--main-pink) !important;
   margin-top: 4px;
+  font-weight: bold !important;
 }
 .btn-pink:hover {
-  color: #ffffff96;
+  color: #ffffff96 !important;
 }
 .pet-vet-footer {
-  background-color: var(--main-pink);
+  background-color: var(--main-pink) !important;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -80,7 +81,7 @@
 .btnArrow {
   width: 65px;
   height: 65px;
-  background-color: var(--main-pink);
+  background-color: var(--main-pink) !important;
   font-size: 2rem;
   color: white;
   position: fixed;
@@ -95,7 +96,7 @@
 
 .btnArrow:hover {
   transform: scale(1.1) !important;
-  background-color: var(--secondary-pink);
+  background-color: var(--secondary-pink) !important;
 }
 @media (width <758px) {
   .btnArrow {

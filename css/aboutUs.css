@@ -9,8 +9,8 @@
     font-size: 45px;
     margin: auto;
     line-height: 50px;
-    font-family: "Commissioner";
-    color: #d93073 !important;
+    font-family: var(--body-font) !important;
+    color: var(--main-pink) !important;
     font-weight: bold;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .card { 
-    background-color: #d93073 !important;
+    background-color: var(--main-pink) !important;
     cursor: pointer;
     border: transparent !important;
     box-shadow: rgba(0, 0, 0, 0.50) 0px 2px 5px, rgba(0, 0, 0, .60) 0px 2px 4px;
@@ -37,14 +37,14 @@ h2{
     font-size: 28px !important;
     text-transform: uppercase;
     color: white;
-    font-family: "Commissioner";
+    font-family: var(--body-font) !important;
 }
 
 .job {
     font-style: italic;
     font-size: 18px;
     color: white;
-    font-family: "Commissioner";
+    font-family: var(--body-font) !important;
 }
 
 .about {
@@ -52,21 +52,21 @@ h2{
     font-weight: lighter;
     font-size: 18px;
     color: white;
-    font-family: "Commissioner";
+    font-family: var(--body-font) !important;
 }
 
 .card:hover{
-    background-color: #d93073 !important;
+    background-color: var(--main-pink) !important;
     transition: .4s;
 }
 .card:hover .social-links { 
-    background-color: #d93073 !important; 
+    background-color: var(--main-pink) !important; 
     transition: .4s;
 }
 
 
 .social-links {
-    background-color: #d93073 !important;
+    background-color: var(--main-pink) !important;
     font-size: 28px;
     border-color: transparent !important;
 }

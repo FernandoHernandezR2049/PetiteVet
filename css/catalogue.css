@@ -9,16 +9,17 @@
 
 .card-title {
     text-align: center;
-    font-size: 1.5 rem;
-    font-family: 'Fraunces';
-    color: var(--main-pink);
+    font-size:  2rem;
+    font-family: var(--title-font) !important;
+    color: var(--main-pink) !important;
 }
 
 .title {
-    color: var(--main-pink);
+    color: var(--main-pink) !important;
+    font-weight: bold !important;
     text-align: center;
-    font-size: 2rem;
-    font-family: 'Fraunces';
+    font-size: 2.5rem;
+    font-family: var(--title-font) !important;
 }
 
 .rounded-costume {
@@ -34,10 +35,10 @@
 
 .card-text {
     text-align: center;
-    font-family: 'Commissioner', 'sans-serif' !important;
-    font-weight: 600;
+    font-family: var(--body-font) !important;
     text-align: justify;
     text-justify: inter-word;
+    font-style: normal !important;
 }
 
 .img-change {
@@ -90,11 +91,11 @@
     right: 2rem;
 }
 
-.btnAdminPage {
-    background-color: var(--main-pink);
+  .btnAdminPage{
+    background-color: var(--main-pink) !important;
     font-size: 1rem;
     color: white;
-    font-family: var(--body-font);
+    font-family: var(--body-font) !important;
     font-weight: bold !important;
     font-size: 1rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;

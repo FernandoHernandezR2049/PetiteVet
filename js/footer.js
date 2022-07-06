@@ -15,6 +15,6 @@ export const footer = `
     <img class="my-icon" src="/assets/calendar.png" alt="" srcset="" />
     <div class="business-hours-text">
         <p>Lunes-Viernes 10:00 - 13:00 / 16:00 - 18:00</p>
-        <p>Sabado 10:00 - 14:00</p>
+        <p>Sábado 10:00 - 14:00</p>
     </div>
 </div>`;

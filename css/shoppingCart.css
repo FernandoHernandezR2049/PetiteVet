@@ -1,8 +1,17 @@
 .title {
   margin-top: 100px;
-  color: var(--main-pink);
-  font-family: var(--title-font);
+  color: var(--main-pink) !important;
+  font-family: var(--title-font) !important;
   text-align: center;
+}
+
+.text-title2{
+  color: var(--main-pink) !important;
+  -webkit-text-stroke: 1px var(--secondary-pink) !important;
+  font-family: var(--title-font) !important;
+  /* font-weight: bold !important; */
+  font-size: 2.5rem;
+  border-color: var(--main-pink) !important;
 }
 
 .card {
@@ -16,8 +25,8 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: left center;
-  font-family: 'Comissioner' sans-serif;
-  color: #D24686;
+  font-family: var(--body-font) !important;
+  color: var(--main-pink) !important;
 }
 
 @media only screen and (max-width: 768px) {

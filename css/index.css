@@ -30,10 +30,10 @@
 }
 
 .products {
-    font-family: 'Fraunces';
-    font-weight: bold;
-    font-size: 2rem;
-    color: #D24686;
+    font-family: var(--title-font) !important;
+    font-weight: bold !important;
+    font-size: 2.5rem;
+    color: var(--main-pink) !important;
     text-align: center;
     padding-top: 2%;
     padding-bottom: 1%;
@@ -44,16 +44,16 @@
 
 .card-title {
     text-align: center;
-    font-size: 1.5 rem;
-    font-family: 'Fraunces';
-    color: #D24686
+    font-size: 2rem;
+    font-family: var(--title-font) !important;
+    color: var(--main-pink);
 }
 
 .title {
-    color: #D24686;
+    color: var(--main-pink);
     text-align: center;
     font-size: 2rem;
-    font-family: 'Fraunces';
+    font-family: var(--title-font) !important;
 }
 
 .rounded-costume {
@@ -61,15 +61,14 @@
 }
 
 .btn-primary {
-    background-color: #D24686 !important;
-    border-color: #D24686 !important;
+    background-color: var(--main-pink) !important;
+    border-color: var(--main-pink) !important;
     font-weight: bold !important;
     align-self: center !important;
 }
 
 .card-text {
-    font-family: 'Commissioner', 'sans-serif' !important;
-    font-weight: 600;
+    font-family: var(--body-font) !important;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -121,14 +120,52 @@
 
 .btn-primary {
     font-weight: bold !important;
-    background-color: #D24686 !important;
-    border-color: #D24686 !important;
+    background-color: var(--main-pink) !important;
+    border-color: var(--main-pink) !important;
     font-size: 0.8rem !important;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
 .centro {
     gap: 1rem !important;
+}
+.service {
+    color: var(--main-pink) !important;
+    font-family: var(--title-font) !important;
+    font-size: 2rem;
+    font-weight: bold !important;
+    text-align: center;
+    opacity: 1;
+    margin: 30px 0;
+}
+
+.text1 {
+    width: 252px;
+    color: rgba(255, 255, 255, 1);
+    top: 15px;
+    left: 240px;
+    font-family: var(--title-font) !important;
+    font-weight: bold !important;
+    font-size: 33px;
+    opacity: 1;
+    text-align: center;
+}
+
+.btn-primary {
+    font-family: var(--body-font) !important;
+    background-color: var(--main-pink) !important;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px !important;
+    border-color: var(--main-pink) !important;
+}
+
+
+/*Recomendations */
+
+.testimony {
+    text-align: center;
+    font-size: small;
+    font-family: var(--body-font) !important;
+    align-items: center;
 }

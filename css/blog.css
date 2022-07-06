@@ -7,35 +7,36 @@
 
 
 .title {
-    color: #d93073;
+    color: var(--main-pink) !important;
     text-align: center;
-    font-size: 2rem;
-    font-family: 'Fraunces';
+    font-size: 2.5rem;
+    font-family: var(--title-font);
+    font-weight: bold !important;
 }
 
 
 .btn-primary {
-    background-color: #d93073 !important;
-    border-color: #d93073 !important;
+    background-color: var(--main-pink) !important;
+    border-color: var(--main-pink) !important;
     font-weight: bold !important;
 }
 
 
 :root{
-    --color: #d93073;
+    --color: var(--main-pink) !important;
 }
 
 .colorPet{
-    background-color: #ffa1cc !important;
+    background-color: var(--secondary-pink) !important;
 }
 
 .colorBtn{
     
-    background-color: #D93073 !important;
+    background-color: var(--main-pink) !important;
 }
 
 .colorTitulo{
-    color: #D93073 !important;
+    color: var(--main-pink) !important;
 }
 
 .borde{
