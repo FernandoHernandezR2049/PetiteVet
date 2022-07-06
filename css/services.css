@@ -7,9 +7,9 @@
 {
     text-align: center;
     font-size: 2.5rem;
-    font-family: var(--title-font);
+    font-family: var(--title-font) !important;
     font-weight: bold !important;
-    color: var(--main-pink);
+    color: var(--main-pink) !important;
 }
 
 .carrusel {
@@ -32,16 +32,16 @@
 .card
 {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
-    font-family: var(--body-font);
-    font-size: 1rem;
+    font-family: var(--body-font) !important;
+    font-size: 1.3rem;
     border-radius: 5px !important;
 }
 
 .card-title
 {
     font-size: 2rem;
-    font-family: var(--title-font);
-    color: var(--main-pink);
+    font-family: var(--title-font) !important;
+    color: var(--main-pink) !important;
 }
 
 .card-footer
@@ -53,7 +53,7 @@
 
 #listaCremación
 {
-    font-family: var(--body-font);
+    font-family: var(--body-font) !important;
     text-align: left;
     list-style: square;
     padding-left: 30px;
@@ -61,7 +61,7 @@
 
 .btn
 {
-    font-family: var(--body-font);
+    font-family: var(--body-font) !important;
     font-weight: bold !important;
     background-color: var(--main-pink) !important;
     border-color: var(--main-pink) !important;
@@ -70,12 +70,12 @@
 
 li::marker 
 {
-	color: var(--main-pink);
+	color: var(--main-pink) !important;
 }
 
 .card-img-top{
     height: 20rem;
-    object-fit: contain fill; 
+    object-fit: cover fill; 
 }
 
 .card {
@@ -88,4 +88,20 @@ li::marker
     -webkit-transform: scale(1.08);
     -ms-transform: scale(1.08);
     transform: scale(1.08);
+}
+
+@media (max-width: 810px) 
+{
+    .card-img-top{
+        height: 10rem;
+    }
+}
+
+@media (max-width: 575px) 
+{
+    .card-img-top{
+        height: auto;
+        width: auto;
+    }
+    
 }
