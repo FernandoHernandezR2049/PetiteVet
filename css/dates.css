@@ -10,15 +10,15 @@
 .card-title {
     text-align: center;
     font-size: 1.5 rem;
-    font-family: 'Fraunces';
-    color: #D24686
+    font-family: var(--title-font);
+    color: var(--main-pink);
 }
 
 .title {
-    color: #D24686;
+    color: var(--main-pink);
     text-align: center;
     font-size: 2rem;
-    font-family: 'Fraunces';
+    font-family: var(--title-font);
 }
 
 .rounded-costume {
@@ -33,14 +33,14 @@
 } */
 
 .btn-primary {
-    background-color: #D24686 !important;
-    border-color: #D24686 !important;
+    background-color: var(--main-pink) !important;
+    border-color: var(--main-pink) !important;
     font-weight: bold !important;
 }
 
 .card-text {
     text-align: center;
-    font-family: 'Commissioner', 'sans-serif' !important;
+    font-family: var(--body-font) !important;
     font-weight: 600;
     text-align: justify;
     text-justify: inter-word;

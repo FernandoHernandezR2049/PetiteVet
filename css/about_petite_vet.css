@@ -16,7 +16,7 @@ body{
     padding-top: 50px;
     text-align: center;
     font-size: 1.5rem;
-    font-family: "Commissioner";
+    font-family: var(--body-font) !important;
 }
 
 .containerInfo{
@@ -27,7 +27,7 @@ body{
 {
     font-size: 1.9rem;
     font-weight: bold;
-    font-family: "Commissioner";
+    font-family: var(--body-font) !important;
 }
 
 .card
@@ -77,12 +77,12 @@ body{
 }
 
 .card-title{
-    font-family: "Commissioner" !important;
+    font-family: var(--body-font) !important;
     font-size: 1.9rem;
 }
 
 .card-text{
-    font-family: "Commissioner" !important;
+    font-family: var(--body-font) !important;
     font-size: large;
 }
 
