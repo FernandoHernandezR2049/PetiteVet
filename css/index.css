@@ -1,7 +1,17 @@
+.superSuper {
+    margin: 0;
+    padding-top: 0;
+}
+
 #body {
     background: #f5f5f5;
     max-width: 100%;
     max-height: 100%;
+}
+
+.principal {
+    margin: 2rem;
+    padding-top: rem;
 }
 
 
@@ -9,7 +19,7 @@
 
 .banner {
     /* BANNER PAPASITO CHULO*/
-    margin-top: 4%;
+    margin-top: 1.5rem;
     width: 100%;
     margin: 0;
     padding-top: 55px;
@@ -49,13 +59,6 @@
 .rounded-costume {
     border-radius: 2rem;
 }
-
-
-/* #products {
-    text-align: center;
-    font-family: 'Commissioner', 'sans-serif' !important;
-    align-items: center;
-} */
 
 .btn-primary {
     background-color: #D24686 !important;
@@ -126,41 +129,6 @@
     font-weight: bold;
 }
 
-.service {
-    color: #b74e7d;
-    font-family: 'Fraunces';
-    font-size: 2rem;
-    font-weight: Bold;
-    text-align: center;
-    opacity: 1;
-    margin: 30px 0;
-}
-
-.text1 {
-    width: 252px;
-    color: rgba(255, 255, 255, 1);
-    top: 15px;
-    left: 240px;
-    font-family: 'Fraunces';
-    font-weight: Bold;
-    font-size: 33px;
-    opacity: 1;
-    text-align: center;
-}
-
-.btn-primary {
-    font-family: 'Commissioner', sans-serif !important;
-    background-color: #D24686 !important;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px !important;
-    border-color: #D24686 !important;
-}
-
-
-/*Recomendations */
-
-.testimony {
-    text-align: center;
-    font-size: small;
-    font-family: 'Commissioner', sans-serif;
-    align-items: center;
+.centro {
+    gap: 1rem !important;
 }

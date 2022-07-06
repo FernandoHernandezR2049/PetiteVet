@@ -51,7 +51,7 @@ export class ProductViewStrategy {
                   <div class="card-body">
                     <h5 class="card-title">${item.name}</h5>
                     <p class="card-text">${item.description}</p>
-                    <div class="card-footer bg-transparent d-flex justify-content-center">
+                    <div class="card-footer bg-transparent d-flex justify-content-center centro">
                       <button type="button" class="btn btn-primary mx-auto" >Agregar</button>
                       <button type="button" class="btn btn-primary mx-auto" >Comprar</button>
                     </div>
@@ -79,6 +79,7 @@ export class CommentViewStrategy {
                 <div class="card-body">
                   <h5 class="card-title">${itemsComments.usuario}</h5>
                   <p class="card-text">${itemsComments.valoracion}</p>
+                  
                 </div>
               </div>
             </div>
