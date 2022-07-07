@@ -3,8 +3,7 @@
     padding-top: 0;
 }
 
-.title
-{
+.title {
     text-align: center;
     font-size: 2.5rem;
     font-family: var(--title-font) !important;
@@ -18,64 +17,57 @@
     padding-top: 30px;
 }
 
-.servicios{
+.servicios {
     margin: 80px;
     margin-top: 10px;
     text-align: center;
 }
 
-.card-deck
-{
+.card-deck {
     padding: 10px;
 }
 
-.card
-{
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+.card {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
     font-family: var(--body-font) !important;
     font-size: 1.3rem;
     border-radius: 5px !important;
 }
 
-.card-title
-{
+.card-title {
     font-size: 2rem;
     font-family: var(--title-font) !important;
     color: var(--main-pink) !important;
 }
 
-.card-footer
-{
+.card-footer {
     /* background-color: #FFA1CC !important; */
     background-color: white !important;
     border-top: none !important;
 }
 
-#listaCremación
-{
+#listaCremación {
     font-family: var(--body-font) !important;
     text-align: left;
     list-style: square;
     padding-left: 30px;
 }
 
-.btn
-{
+.btn {
     font-family: var(--body-font) !important;
     font-weight: bold !important;
     background-color: var(--main-pink) !important;
     border-color: var(--main-pink) !important;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; 
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
-li::marker 
-{
-	color: var(--main-pink) !important;
+li::marker {
+    color: var(--main-pink) !important;
 }
 
-.card-img-top{
+.card-img-top {
     height: 20rem;
-    object-fit: cover fill; 
+    object-fit: cover fill;
 }
 
 .card {
@@ -90,18 +82,20 @@ li::marker
     transform: scale(1.08);
 }
 
-@media (max-width: 810px) 
-{
-    .card-img-top{
+@media (max-width: 810px) {
+    .card-img-top {
         height: 10rem;
     }
 }
 
-@media (max-width: 575px) 
-{
-    .card-img-top{
+@media (max-width: 575px) {
+    .card-img-top {
         height: auto;
         width: auto;
     }
-    
+
+    .servicios {
+        width: 100%;
+        margin-left: 0;
+    }
 }
