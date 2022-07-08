@@ -78,7 +78,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `PetiteVet`.`user` (
   `iduser` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NULL,
-  `phone` VARCHAR(45) NULL,
+  `phone` VARCHAR(15) NULL,
   `email` VARCHAR(100) NULL,
   `password` VARCHAR(255) NULL,
   `role_idrole` INT NOT NULL,
