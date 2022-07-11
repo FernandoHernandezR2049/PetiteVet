@@ -38,7 +38,7 @@ const items = [{
     'Precio': '79'
 }, {
     'id': 6,
-    'name': 'Perchera para perro',
+    'name': 'Pechera para perro',
     'img': '/assets/cataloguePics/6.pechera_perro.jpg',
     'description': 'Raza pequeña. Material: Piel sintética. Medidas: pecho 49cm y cintura: 58cm. Los colores de la imagen pueden variar.',
     'SKU': '',

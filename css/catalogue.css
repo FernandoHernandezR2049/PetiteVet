@@ -2,11 +2,6 @@
     padding-top: 50px;
 }
 
-.uno {
-    margin: 2rem;
-    padding: 2rem;
-}
-
 .card-title {
     text-align: center;
     font-size:  2rem;
@@ -105,4 +100,10 @@
 
 .title-principal {
     text-align: center;
+}
+
+@media (max-width: 760px) {
+    .uno {
+        margin: 20px;
+    }
 }
