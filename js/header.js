@@ -24,7 +24,7 @@ export const header = `
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
   <ul class="navbar-nav ml-auto mr-auto">
     <li class="nav-item">
-      <a class="nav-link" href="/index.html">Home </a>
+      <a class="nav-link" href="/index.html">Inicio </a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="/pages/catalogue.html">Catálogo</a>

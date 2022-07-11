@@ -5,13 +5,21 @@
   text-align: center;
 }
 
-.text-title2{
+.text-title2 {
   color: var(--main-pink) !important;
   -webkit-text-stroke: 1px var(--secondary-pink) !important;
   font-family: var(--title-font) !important;
   /* font-weight: bold !important; */
   font-size: 2.5rem;
   border-color: var(--main-pink) !important;
+}
+
+.tituloCarrito {
+  text-align: center;
+}
+
+.badgepill {
+  text-align: right;
 }
 
 .card {
