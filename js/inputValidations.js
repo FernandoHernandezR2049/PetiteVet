@@ -1,6 +1,6 @@
 export function validarNombre(txtNombre) {
   //funcion validar nombre inicio
-  const reNombre = /^(?=.{4,50}$)[a-zA-ZáéíóúÁÉÍÓÚ]+( [a-zA-ZáéíóúÁÉÍÓÚ]+)*$/;
+  const reNombre = /^(?=.{3,50}$)[a-zA-ZáéíóúÁÉÍÓÚ]+( [a-zA-ZáéíóúÁÉÍÓÚ]+)*$/;
   if (!reNombre.test(txtNombre.value)) {
     return false;
   } else {

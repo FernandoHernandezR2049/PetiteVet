@@ -83,7 +83,7 @@ register.addEventListener("click", (event) => {
         let lista = "";
         if (!validarNombre(Name)) {
             Name.style.border = "red thin solid";
-            lista += "<li>Se debe escribir un nombre válido</li>";
+            lista += "<li>Se debe escribir tu nombre y al menos un apellido</li>";
             Name.value = "";
             Name.focus();
         } //if validarNombre
