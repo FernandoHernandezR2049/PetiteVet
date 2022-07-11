@@ -97,17 +97,14 @@ export class ShoppingCartStrategy {
         prevItem +
         `
                <li class="list-group-item d-flex justify-content-between lh-condensed">
-                    <img src="${item.image
-        }" alt="" width="40px"> 
+                    <img src="${item.image}" alt="" width="40px"> 
                     <div>
                       <h6 class="my-0">${item.name}</h6>
-                      <small class="text-muted">Número de piezas: ${item.pieces
-        }</small>
+                      <small class="text-muted">Número de piezas: ${item.pieces}</small>
                     </div>
-                    <img src="../assets/cart2white.svg"></img>
+                    <button type="button"> <img src="../assets/trash3.svg"></button>
                     <div>
-                      <span style="display: block;"class="text-muted my-0">$${item.cost
-        }</span>
+                      <span style="display: block;"class="text-muted my-0">$${item.cost}</span>
                       <span>$${item.cost * item.pieces}</span>
                     </div>
                   </li>
