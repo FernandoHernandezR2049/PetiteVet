@@ -10,7 +10,7 @@ export function validarNombre(txtNombre) {
 
 export function validarMensaje(txtMensaje) {
   //funcion validar nombre inicio
-  const reMensaje = /^(?=.{4,250}$)[a-zA-ZáéíóúÁÉÍÓÚ]+( [a-zA-ZáéíóúÁÉÍÓÚ]+)*$/;
+  const reMensaje = /^(?=.{4,250}$)[a-zA-Z0-9.,áéíóúÁÉÍÓÚ]+( [a-zA-Z0-9.,áéíóúÁÉÍÓÚ]+)*$/;
   if (!reMensaje.test(txtMensaje.value)) {
     return false;
   } else {
