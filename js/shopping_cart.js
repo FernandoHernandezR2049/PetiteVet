@@ -51,12 +51,13 @@ cartItems.subscribe(shoppingCartListObserver);
 window.addEventListener("load", () => {
   if (localStorage.getItem("productsCart") != null) {
     shoppingCartData = JSON.parse(localStorage.getItem("productsCart"));
-    console.log(shoppingCartData[0]);
-    shoppingCartData.map(item => cartItems.add({
-      image: item.img,
-      name: item.name,
-      pieces: 1,
-      cost: item.Precio,
-    }))
+    shoppingCartData.map((item) =>
+      cartItems.add({
+        image: item.img,
+        name: item.name,
+        pieces: item.quantity,
+        cost: item.Precio,
+      })
+    );
   }
-}) 
+});

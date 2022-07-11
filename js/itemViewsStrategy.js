@@ -26,9 +26,9 @@ export class CatalogueStrategy {
                     <h5 class="card-title">${item.name}</h5>
                     <p class="card-text">${item.description}</p>
                     <h6>SKU: ${item.SKU}</h6>
-                    <h6>Precio: ${item.Precio}</h6>
+                    <h6>Precio: $${item.Precio}</h6>
                     <div class="card-footer bg-transparent d-flex justify-content-center">
-                      <button data-index = "${item.id}" type="button" class="btn btn-primary mx-auto" >Agregar</button>
+                      <button data-index = "${item.id}" type="button" class="btn btn-primary mx-auto" data-toggle="modal" data-target="#addToCartModal">Agregar</button>
                     </div>
                   </div>
                 </div>
@@ -65,7 +65,6 @@ export class ProductViewStrategy {
   }
 }
 
-
 export class CommentViewStrategy {
   show(data2, element) {
     element.innerHTML = data2.reduce((prevItem, itemsComments) => {
@@ -89,7 +88,6 @@ export class CommentViewStrategy {
   }
 }
 
-
 export class ShoppingCartStrategy {
   show(data, element) {
     element.innerHTML = data.reduce((prevItem, item) => {
@@ -97,17 +95,18 @@ export class ShoppingCartStrategy {
         prevItem +
         `
                <li class="list-group-item d-flex justify-content-between lh-condensed">
-                    <img src="${item.image
-        }" alt="" width="40px"> 
+                    <img src="${item.image}" alt="" width="40px"> 
                     <div>
                       <h6 class="my-0">${item.name}</h6>
-                      <small class="text-muted">Número de piezas: ${item.pieces
-        }</small>
+                      <small class="text-muted">Número de piezas: ${
+                        item.pieces
+                      }</small>
                     </div>
                     <img src="../assets/cart2white.svg"></img>
                     <div>
-                      <span style="display: block;"class="text-muted my-0">$${item.cost
-        }</span>
+                      <span style="display: block;"class="text-muted my-0">$${
+                        item.cost
+                      }</span>
                       <span>$${item.cost * item.pieces}</span>
                     </div>
                   </li>
