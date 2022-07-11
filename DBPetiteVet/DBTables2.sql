@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `PetiteVet`.`Product` (
   `description` VARCHAR(700) NULL,
   `sku` VARCHAR(45) NOT NULL,
   `quantity` INT NOT NULL,
-  `image` BLOB NULL,
+  `image` VARCHAR(50) NULL,
   PRIMARY KEY (`idProduct`),
   UNIQUE INDEX `sku_UNIQUE` (`sku` ASC) VISIBLE)
 ENGINE = InnoDB;
@@ -97,7 +97,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `PetiteVet`.`order` (
   `idorder` INT NOT NULL AUTO_INCREMENT,
-  `date` DATETIME NULL,
+  `date` VARCHAR(45) NULL,
   `user_iduser` INT NOT NULL,
   `user_role_idrole` INT NOT NULL,
   PRIMARY KEY (`idorder`, `user_iduser`, `user_role_idrole`),
