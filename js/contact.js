@@ -48,7 +48,7 @@ agregar.addEventListener("click", (event) => {
         } //ifvalidarTel
 
         if (!validarMensaje(txtMensaje)) {
-            txtTel.style.border = "red thin solid";
+            txtMensaje.style.border = "red thin solid";
             lista += "<li>Escribe un mensaje por favor</li>";
         } //ifvalidarTel
 
