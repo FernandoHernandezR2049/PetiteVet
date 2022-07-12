@@ -46,3 +46,12 @@ INSERT INTO `petitevet`.`order` (`idorder`, `date`, `user_iduser`, `user_role_id
 INSERT INTO `petitevet`.`order` (`idorder`, `date`, `user_iduser`, `user_role_idrole`) VALUES ('4', '2022-07-01', '4', '4');
 INSERT INTO `petitevet`.`order` (`idorder`, `date`, `user_iduser`, `user_role_idrole`) VALUES ('5', '2022-07-03', '5', '5');
 
+-- -----------------------------------------------------
+-- UPDATE Table `PetiteVet`.`produc`
+-- -----------------------------------------------------
+UPDATE `petitevet`.`product` SET `image` = '1.cepillo_canino.png' WHERE (`idProduct` = '1');
+UPDATE `petitevet`.`product` SET `image` = '2.plato_de_comida.jpg' WHERE (`idProduct` = '2');
+UPDATE `petitevet`.`product` SET `image` = '3.cama.jpg' WHERE (`idProduct` = '3');
+UPDATE `petitevet`.`product` SET `image` = '4.correa_perro.jpg' WHERE (`idProduct` = '4');
+UPDATE `petitevet`.`product` SET `image` = '5.collar_perro.jpg' WHERE (`idProduct` = '5');
+
