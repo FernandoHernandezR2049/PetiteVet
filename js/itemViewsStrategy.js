@@ -19,7 +19,7 @@ export class CatalogueStrategy {
         prevItem +
         `<div class="row col-12 col-md-5 col-lg-4 col-xl-3 no-gutters rounded-costume shadow card-47">
                 <div class="col-md-4 my-auto">
-                  <img src="${item.img}" class="card-img ml-2 image special-img img-change">
+                  <img src="/assets/cataloguePics/${item.img}" class="card-img ml-2 image special-img img-change">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -45,7 +45,7 @@ export class ProductViewStrategy {
         prevItem +
         `<div class="row col-12 col-md-5 col-lg-4 col-xl-3 no-gutters rounded-costume shadow card-47">
                 <div class="col-md-4 my-auto">
-                  <img src="${item.img}" class="card-img ml-2 image special-img img-change2">
+                  <img src="/assets/cataloguePics/${item.img}" class="card-img ml-2 image special-img img-change2">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
