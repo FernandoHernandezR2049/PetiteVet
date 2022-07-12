@@ -25,8 +25,8 @@ export class CatalogueStrategy {
                   <div class="card-body">
                     <h5 class="card-title">${item.name}</h5>
                     <p class="card-text">${item.description}</p>
-                    <h6>SKU: ${item.SKU}</h6>
-                    <h6>Precio: $${item.Precio}</h6>
+                    <h6>SKU: ${item.sku}</h6>
+                    <h6>Precio: $${item.precio}</h6>
                     <div class="card-footer bg-transparent d-flex justify-content-center">
                       <button data-index = "${item.id}" type="button" class="btn btn-primary mx-auto" data-toggle="modal" data-target="#addToCartModal">Agregar</button>
                     </div>
@@ -52,14 +52,11 @@ export class ProductViewStrategy {
                     <h5 class="card-title">${item.name}</h5>
                     <p class="card-text">${item.description}</p>
                     <div class="card-footer bg-transparent d-flex justify-content-center centro">
-                      <button type="button" class="btn btn-primary mx-auto" >Agregar</button>
-                      <button type="button" class="btn btn-primary mx-auto" >Comprar</button>
+                      <a href="./pages/catalogue.html"  class="btn btn-primary mx-auto" >Ir a catálogo</a>
                     </div>
                   </div>
                 </div>
-              </div>
-      
-      `
+              </div>`
       );
     }, "");
   }
