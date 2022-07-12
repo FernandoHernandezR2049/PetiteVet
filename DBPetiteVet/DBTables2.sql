@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `PetiteVet`.`Product` (
   `description` VARCHAR(700) NULL,
   `sku` VARCHAR(45) NOT NULL,
   `quantity` INT NOT NULL,
-  `image` VARCHAR(50) NULL,
+  `image` VARCHAR(200) NULL,
   PRIMARY KEY (`idProduct`),
   UNIQUE INDEX `sku_UNIQUE` (`sku` ASC) VISIBLE)
 ENGINE = InnoDB;
