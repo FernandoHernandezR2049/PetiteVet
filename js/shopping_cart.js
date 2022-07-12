@@ -8,7 +8,7 @@ import {
 petiteHeader.innerHTML = header;
 
 let shoppingCartData = [{}];
-const cartItems = new ShoppingCartItems();
+let cartItems = new ShoppingCartItems();
 const shoppingCartListObserver = new ShoppingCartListObserver(
   shoppingCartList,
   cartItems.data
@@ -18,36 +18,6 @@ const shoppingCartItemCountObserver = new ShoppingCartItemCountObserver(
 );
 cartItems.subscribe(shoppingCartItemCountObserver);
 cartItems.subscribe(shoppingCartListObserver);
-// cartItems.add({
-//   image: "3.cama.jpg",
-//   name: "Cama",
-//   pieces: "3",
-//   cost: 230,
-// });
-// cartItems.add({
-//   image: "6.pechera_perro.jpg",
-//   name: "Pechera",
-//   pieces: "1",
-//   cost: 320,
-// });
-// cartItems.add({
-//   image: "2.plato_de_comida.jpg",
-//   name: "Plato de comida",
-//   pieces: "2",
-//   cost: 130,
-// });
-// cartItems.add({
-//   image: "2.plato_de_comida.jpg",
-//   name: "Plato de comida",
-//   pieces: "2",
-//   cost: 130,
-// });
-// cartItems.add({
-//   image: "2.plato_de_comida.jpg",
-//   name: "Plato de comida",
-//   pieces: "2",
-//   cost: 130,
-// });
 window.addEventListener("load", () => {
   if (localStorage.getItem("productsCart") != null) {
     shoppingCartData = JSON.parse(localStorage.getItem("productsCart"));
@@ -57,7 +27,38 @@ window.addEventListener("load", () => {
         name: item.name,
         pieces: item.quantity,
         cost: item.Precio,
+        id: item.id,
       })
     );
+  }
+});
+
+document.addEventListener("click", (e) => {
+  if (e.target.dataset.index) {
+    console.log(e.target.dataset.index);
+    let shoppingCartData = JSON.parse(localStorage.getItem("productsCart"));
+    // let prueba = shoppingCartData.filter((item) => item.id != e.target.dataset.index);
+    // console.log(prueba);
+    // console.log(shoppingCartData);
+    cartItems.remove(e.target.dataset.index);
+    // prueba.map((item) =>
+    //   cartItems.add({
+    //     image: item.img,
+    //     name: item.name,
+    //     pieces: item.quantity,
+    //     cost: item.Precio,
+    //     id: item.id,
+    //   })
+    // );
+
+    //   let productoEnCarrito = productosCarrito.filter(
+    //     (producto) => producto.id == item[0].id
+    //   );
+    //   productoEnCarrito.length > 0
+    //     ? productosCarrito.map(
+    //       (producto) => producto.id == item[0].id && producto.quantity++
+    //     )
+    //     : productosCarrito.push({ ...item[0], quantity: 1 });
+    //   localStorage.setItem("productsCart", JSON.stringify(productosCarrito));
   }
 });

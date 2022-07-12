@@ -25,6 +25,10 @@ export class ShoppingCartItems extends Subject {
     this.data.push(item);
     this.notify(this.data);
   }
+  remove(id) {
+    this.data = this.data.filter((item) => item.id != id);
+    this.notify(this.data);
+  }
 }
 
 export class ShoppingCartListObserver {
@@ -37,6 +41,7 @@ export class ShoppingCartListObserver {
     );
   }
   refresh(data) {
+    this.cartElements = new InfoContext(new ShoppingCartStrategy(), data, this.element);
     this.cartElements.show();
   }
 }

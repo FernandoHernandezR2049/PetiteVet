@@ -98,14 +98,10 @@ export class ShoppingCartStrategy {
                     <img src="${item.image}" alt="" width="40px"> 
                     <div>
                       <h6 class="my-0">${item.name}</h6>
-                      <small class="text-muted">Número de piezas: ${item.pieces
-        }</small>
                       <small class="text-muted">Número de piezas: ${item.pieces}</small>
                     </div>
-                    <button type="button"> <img src="../assets/trash3.svg"></button>
+                    <button  type="button" class="btnDelete"> <img src="../assets/trash3.svg" data-index = "${item.id}"></button>
                     <div>
-                      <span style="display: block;"class="text-muted my-0">$${item.cost
-        }</span>
                       <span style="display: block;"class="text-muted my-0">$${item.cost}</span>
                       <span>$${item.cost * item.pieces}</span>
                     </div>
@@ -124,3 +120,4 @@ export class ShoppingCartStrategy {
   `;
   }
 }
+
