@@ -110,20 +110,21 @@ CREATE TABLE IF NOT EXISTS `PetiteVet`.`order` (
 ENGINE = InnoDB;
 
 
+-- Tabla cuando se implemente DATATIME en la tabla de order
 -- -----------------------------------------------------
 -- Table `PetiteVet`.`timestamps`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `PetiteVet`.`timestamps` (
-  `create_time` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
-  `update_time` TIMESTAMP NULL);
+-- CREATE TABLE IF NOT EXISTS `PetiteVet`.`timestamps` (
+-- `create_time` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+--  `update_time` TIMESTAMP NULL);
 
 
 -- -----------------------------------------------------
 -- Table `PetiteVet`.`timestamps_1`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `PetiteVet`.`timestamps_1` (
-  `create_time` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
-  `update_time` TIMESTAMP NULL);
+-- CREATE TABLE IF NOT EXISTS `PetiteVet`.`timestamps_1` (
+--  `create_time` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+-- `update_time` TIMESTAMP NULL);
 
 
 -- -----------------------------------------------------
