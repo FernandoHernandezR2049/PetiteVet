@@ -40,16 +40,15 @@ login.addEventListener("click", (event) => {
         .then(result => {if(result == "true"){
             window.location.href = 'index.html'; 
         }else{
-                    emailLogin.style.border = "red thin solid";
-                    passwordLogin.style.border = "red thin solid";
-                    emailLogin.value = "";
-                    passwordLogin.value = "";
-                    emailLogin.focus(); //quitarlo cuando pongas alerts
+                    // emailLogin.style.border = "red thin solid";
+                    // passwordLogin.style.border = "red thin solid";
+                    // emailLogin.value = "";
+                    // passwordLogin.value = "";
+                    // emailLogin.focus(); //quitarlo cuando pongas alerts
                 
                 document.getElementById(
                     "alertLoginFail"
-                ).innerHTML = `Credenciales inválidas!
-                    `;
+                ).innerHTML = `Credenciales inválidas!`;
                 document.getElementById("alertLoginFail").style.display = "block";
             
                 setTimeout(function() {
