@@ -26,7 +26,7 @@ window.addEventListener("load", () => {
         image: item.img,
         name: item.name,
         pieces: item.quantity,
-        cost: item.Precio,
+        cost: item.precio,
         id: item.id,
       })
     );
