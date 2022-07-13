@@ -5,72 +5,75 @@ import {
     validarNombre,
     validarTel,
 } from "./inputValidations.js";
+//NavBar Dinámico
+import { header } from "./header.js";
+petiteHeader.innerHTML = header;
+
+//Footer Dinámico
+import { footer } from "./footer.js";
+petiteFooter.innerHTML = footer;
+
 let register = document.getElementById("btnRegistrar");
 let login = document.getElementById("btnLogin");
 let users = [];
 
-//eventListenerLogin
+let urlVerify = 'http://localhost:8081/api/login/?email=';
+let urlConmplement = '&password=';
+
 login.addEventListener("click", (event) => {
     event.preventDefault();
-    localStorage.getItem("credentials")
-    let userLogin = JSON.parse(localStorage.getItem("credentials")) || null || [];
-    // console.log(userLogin);
-    // console.log(emailLogin.value);
-    // console.log(passwordLogin.value);
-    const result = userLogin.filter(credentials => credentials.email === emailLogin.value &&
-        credentials.password === passwordLogin.value);
-    // console.log(result); 
-    //ALERTA INICIO DE SESIÓN EXITOSO
-    if (result[0]) {
-        emailLogin.style.border = "green thin solid";
-        passwordLogin.style.border = "green thin solid";
-        emailLogin.value = "";
-        passwordLogin.value = "";
-        document.getElementById(
-            "alertLoginSuccess"
-        ).innerHTML = `Inicio de sesión exitoso!
-          `;
-        document.getElementById("alertLoginSuccess").style.display = "block";
-        document.location.href = "/index.html";
+    let mail = document.getElementById("emailLogin").value;
+    let password = document.getElementById("passwordLogin").value;
 
-        setTimeout(function() {
-            document.getElementById("alertLoginSuccess").style.display = "none";
-        }, 7500);
-        setTimeout(function() {
-            document.getElementById("emailLogin").style.border = "";
-            document.getElementById("passwordLogin").style.border = "";
-            password.style.border = "";
-            passwordConfirm.style.border = "";
-        }, 1000);
-        return;
-        //FIN ALERTA INICIO DE SESIÓN ÉXITOSO
-        //INICIO ALERTA CREDENCIALES INVÁLIDAS
-    }
-    if (!result[0]) {
-        emailLogin.style.border = "red thin solid";
-        passwordLogin.style.border = "red thin solid";
-        emailLogin.value = "";
-        passwordLogin.value = "";
-        emailLogin.focus(); //quitarlo cuando pongas alerts
-    }
-    document.getElementById(
-        "alertLoginFail"
-    ).innerHTML = `Credenciales inválidas!
-        `;
-    document.getElementById("alertLoginFail").style.display = "block";
+    urlVerify += mail;
+    urlConmplement += password;
+    let completeUrl = urlVerify + urlConmplement;
 
-    setTimeout(function() {
-        document.getElementById("alertLoginFail").style.display = "none";
-    }, 7500);
-    setTimeout(function() {
-        document.getElementById("emailLogin").style.border = "";
-        document.getElementById("passwordLogin").style.border = "";
-        password.style.border = "";
-        passwordConfirm.style.border = "";
-    }, 1000);
-    return;
-    //FIN ALERTA CREDENCIALES INVÁLIDAS
-}); //addEventListenerLogin-Register
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    var raw = JSON.stringify({
+        "email": mail
+    });
+
+    var requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+    };
+
+    fetch(completeUrl, requestOptions)
+        .then(response => { return response.text()})
+        .then(result => {if(result == "true"){
+            document.location.href = '/index.html'; 
+        }else{
+                    // emailLogin.style.border = "red thin solid";
+                    // passwordLogin.style.border = "red thin solid";
+                    // emailLogin.value = "";
+                    // passwordLogin.value = "";
+                    // emailLogin.focus(); //quitarlo cuando pongas alerts
+                
+                document.getElementById(
+                    "alertLoginFail"
+                ).innerHTML = `Credenciales inválidas!`;
+                document.getElementById("alertLoginFail").style.display = "block";
+            
+                setTimeout(function() {
+                    document.getElementById("alertLoginFail").style.display = "none";
+                }, 7500);
+                setTimeout(function() {
+                    document.getElementById("emailLogin").style.border = "";
+                    document.getElementById("passwordLogin").style.border = "";
+                    password.style.border = "";
+                    passwordConfirm.style.border = "";
+                }, 1000);
+                //FIN ALERTA CREDENCIALES INVÁLIDAS
+        }})
+        .catch(error => console.log('error', error));
+
+
+});
 
 register.addEventListener("click", (event) => {
     event.preventDefault();
@@ -129,12 +132,32 @@ register.addEventListener("click", (event) => {
     //localStorage PARA REGISTRO DE USUARIOS
     else {
         {
-            let elemento = `{"Name":"${Name.value}","email":"${email.value}", "Tel":"${Tel.value}", "password":"${password.value}"}`;
+            //let elemento = `{"Name":"${Name.value}","email":"${email.value}", "Tel":"${Tel.value}", "password":"${password.value}"}`;
             //                String                 string                      number                string
-            console.log(elemento);
-            users.push(JSON.parse(elemento));
-            localStorage.setItem("credentials", JSON.stringify(users))
-        };
+            // 
+            var myHeaders = new Headers();
+            myHeaders.append("Content-Type", "application/json");
+
+            var raw = JSON.stringify({
+            "name": Name.value,
+            "email": email.value,
+            "tel": Tel.value,
+            "password":password.value,
+            "idrole": 1
+            });
+
+            var requestOptions = {
+            method: 'POST',
+            headers: myHeaders,
+            body: raw,
+            redirect: 'follow'
+            };
+
+            fetch("http://localhost:8081/api/users/", requestOptions)
+            .then(response => response.text())
+            .then(result => console.log(result))
+            .catch(error => console.log('error', error));
+                    };
 
 
         {
@@ -175,13 +198,6 @@ register.addEventListener("click", (event) => {
 
 }); // FIN Event Listener PARA REGISTRO DE USUARIOS CHAVOS
 
-//NavBar Dinámico
-import { header } from "./header.js";
-petiteHeader.innerHTML = header;
-
-//Footer Dinámico
-import { footer } from "./footer.js";
-petiteFooter.innerHTML = footer;
 
 
 //localStorage

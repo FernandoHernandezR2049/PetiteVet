@@ -97,23 +97,14 @@ add.addEventListener("click", (event) => {
     }),
   });
 
-  let tmp = `<tr id="tbl">
-    <th scope="row">${title.value}</th>
-    <td>${description.value}</td>
-    <td>${price.value}</td>
-    <td>${quantity.value}</td>
-    <td><img class="productImage" src="./../assets/cataloguePics/${urlimage.value}"/></td>
-    <td><button id="btnDelete" class="btnDel">Quitar</button></td>
-    </tr>`;
-
-  console.log(tmp);
-  bodyTable[0].innerHTML += tmp;
+  
   title.value = "";
   description.value = "";
   price.value = "";
   quantity.value = "";
   urlimage.value = "";
   title.focus();
+  location.reload();
 });
 //GET request
 window.addEventListener("load", async () => {
