@@ -73,6 +73,9 @@ export const header = `
     <li class="nav-item">
       <a class="btn btn-pink" id="btnLogout" href="/index.html">Cerrar Sesión</a>
     </li>
+    <li class="nav-item">
+    <a class = "nav-link text-dark"  id="btnLogout" href="/index.html">Cerrar Sesión</a>
+    </li> 
   </ul>
 </div>
 <button class="btnArrow" type="button" id="btnPosition">^</button>
