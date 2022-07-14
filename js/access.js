@@ -5,9 +5,6 @@ import {
     validarNombre,
     validarTel,
 } from "./inputValidations.js";
-//NavBar Dinámico
-import { header } from "./header.js";
-petiteHeader.innerHTML = header;
 
 //Footer Dinámico
 import { footer } from "./footer.js";
@@ -17,13 +14,15 @@ let register = document.getElementById("btnRegistrar");
 let login = document.getElementById("btnLogin");
 let users = [];
 
+
 let urlVerify = 'http://localhost:8081/api/login/?email=';
-let urlConmplement = '&password=';
+let urlConmplement = '&password='; 
 
 login.addEventListener("click", (event) => {
     event.preventDefault();
     let mail = document.getElementById("emailLogin").value;
     let password = document.getElementById("passwordLogin").value;
+
 
     urlVerify += mail;
     urlConmplement += password;
@@ -46,13 +45,13 @@ login.addEventListener("click", (event) => {
     fetch(completeUrl, requestOptions)
         .then(response => { return response.text()})
         .then(result => {if(result == "true"){
+            localStorage.setItem("token", "token");
             document.location.href = '/index.html'; 
         }else{
-                    // emailLogin.style.border = "red thin solid";
-                    // passwordLogin.style.border = "red thin solid";
-                    // emailLogin.value = "";
-                    // passwordLogin.value = "";
-                    // emailLogin.focus(); //quitarlo cuando pongas alerts
+                    emailLogin.style.border = "red thin solid";
+                    passwordLogin.style.border = "red thin solid";
+                    emailLogin.value = "";
+                    passwordLogin.value = "";
                 
                 document.getElementById(
                     "alertLoginFail"
@@ -73,7 +72,7 @@ login.addEventListener("click", (event) => {
         .catch(error => console.log('error', error));
 
 
-});
+});//FIN EVENT LISTENER LOGIN
 
 register.addEventListener("click", (event) => {
     event.preventDefault();
@@ -127,7 +126,7 @@ register.addEventListener("click", (event) => {
             passwordConfirm.style.border = "";
         }, 1000);
 
-    } //if principal
+    } //if principal validación 
 
     //localStorage PARA REGISTRO DE USUARIOS
     else {
@@ -192,12 +191,8 @@ register.addEventListener("click", (event) => {
             return;
         } //AQUI TERMINA LA VALIDACION CORRECTA DE REGISTRO DE USUARIOS MUCHO OJO CHIKES
 
-    } //localStorage
+    } //elseRegister
 
 
 
 }); // FIN Event Listener PARA REGISTRO DE USUARIOS CHAVOS
-
-
-
-//localStorage

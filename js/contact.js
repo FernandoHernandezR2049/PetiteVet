@@ -104,10 +104,6 @@ function sendEmail() {
     }).then((message) => {if(message == "OK"){ document.getElementById("succes").style.display = "block";  agregar.disabled =true;}});// add by j
 }
 
-//NavBar Dinámico
-import { header } from "./header.js";
-petiteHeader.innerHTML = header;
-
 //Footer Dinámico
 import { footer } from "./footer.js";
 petiteFooter.innerHTML = footer;

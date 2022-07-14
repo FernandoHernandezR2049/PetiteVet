@@ -6,8 +6,8 @@ export function addItems(URL_MAIN, strategy, element) {
         method: 'get'
     }).then(function(response) {
         response.json().then(function(json) {
-            console.log(json);
-            console.log(json.length);
+            // console.log(json);
+            // console.log(json.length);
             let papucho = Array.from(json);
             papucho.sort(function(a, b) {
                 if (a.description.length > b.description.length) {
@@ -29,5 +29,5 @@ export function addItems(URL_MAIN, strategy, element) {
     }).catch(function(err) {
         console.log(err);
     });
-    console.log(document.getElementById(element));
+    // console.log(document.getElementById(element));
 } //addItems

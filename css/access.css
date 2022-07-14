@@ -63,6 +63,10 @@ h2{
   color: gainsboro;
 }
 
+#btnLogin:hover{
+    color:gainsboro;
+}
+
 @media (max-width: 768px) {
     .mainContainer {
         display: table-row;

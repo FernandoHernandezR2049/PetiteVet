@@ -1,8 +1,6 @@
 import { ProductViewStrategy, InfoContext, CommentViewStrategy } from "./itemViewsStrategy.js";
-import { header } from "./header.js";
 import { footer } from "./footer.js";
 import{addItems} from "./getProducts.js";
-petiteHeader.innerHTML = header;
 petiteFooter.innerHTML = footer;
 
 

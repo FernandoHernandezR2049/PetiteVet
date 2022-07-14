@@ -1,9 +1,6 @@
 import { CatalogueStrategy, InfoContext } from "./itemViewsStrategy.js";
-import { header } from "./header.js";
 import { footer } from "./footer.js";
 import { addItems } from "./getProducts.js";
-
-petiteHeader.innerHTML = header;
 petiteFooter.innerHTML = footer;
 
 addItems("http://localhost:8081/api/products/", CatalogueStrategy, "productos");

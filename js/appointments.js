@@ -1,6 +1,4 @@
-import { header } from "./header.js";
-petiteHeader.innerHTML = header;
-
+//FOOTER DINAMICO
 import { footer } from "./footer.js";
 petiteFooter.innerHTML = footer;
 

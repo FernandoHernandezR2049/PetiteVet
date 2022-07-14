@@ -1,11 +1,11 @@
 //NavBar Dinámico
-import { header } from "/js/header.js";
+
 import {
   ShoppingCartItemCountObserver,
   ShoppingCartItems,
   ShoppingCartListObserver,
 } from "/js/observerShoppingCart.js";
-petiteHeader.innerHTML = header;
+
 
 let shoppingCartData = [{}];
 let cartItems = new ShoppingCartItems();
