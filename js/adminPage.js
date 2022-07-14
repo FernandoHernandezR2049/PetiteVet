@@ -119,7 +119,7 @@ window.addEventListener("load", async () => {
                 <td>${element.quantity}</td>
                 <td><img class="productImage" src="/assets/cataloguePics/${element.img}"/></td>
                 <td><button data-index = "${element.id}" id="btnDelete" class="btnDel">Quitar</button></td>
-                <td><button onclick="detallesProducto(${element.name},${element.description},${element.precio},${element.quantity},${element.img},${id})" class="btnDel">Editar</button></td>
+                <td><button onclick="detallesProducto(${element.name},${element.description},${element.precio},${element.quantity},${element.img},${element.id})" class="btnDel">Editar</button></td>
                 </tr>`;
   });
 });
